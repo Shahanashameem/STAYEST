@@ -1,0 +1,1159 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>FAQs | STAYEST</title>
+
+  <meta name="description"
+    content="Frequently asked questions about STAYEST, property assessments, company lets, guaranteed rent and professional property management.">
+
+  <meta name="theme-color" content="#0F2747">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+
+
+  <style>
+
+    /* =========================================
+       FAQ HERO
+    ========================================= */
+
+    .faq-hero {
+      min-height: 520px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      background: var(--navy);
+    }
+
+    .faq-hero-bg {
+      position: absolute;
+      inset: 0;
+
+      background:
+        linear-gradient(
+          90deg,
+          rgba(8,29,55,.96) 0%,
+          rgba(15,39,71,.88) 50%,
+          rgba(15,39,71,.65) 100%
+        ),
+        url("https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=2200&q=85")
+        center/cover;
+    }
+
+    .faq-hero-content {
+      position: relative;
+      z-index: 1;
+      color: #fff;
+      padding: 100px 0;
+      max-width: 800px;
+    }
+
+    .faq-hero h1 {
+      font-family: Poppins, sans-serif;
+      font-size: 58px;
+      line-height: 1.1;
+      letter-spacing: -2px;
+      margin: 0 0 28px;
+    }
+
+    .faq-hero h1 span {
+      color: var(--gold);
+    }
+
+    .faq-hero p:not(.eyebrow) {
+      color: rgba(255,255,255,.78);
+      font-size: 17px;
+      max-width: 680px;
+      margin: 0;
+    }
+
+
+    /* =========================================
+       INTRO
+    ========================================= */
+
+    .faq-intro {
+      display: grid;
+      grid-template-columns: .8fr 1.2fr;
+      gap: 90px;
+      align-items: start;
+    }
+
+    .faq-intro h2 {
+      font-family: Poppins;
+      font-size: 39px;
+      line-height: 1.18;
+      letter-spacing: -1.2px;
+      color: var(--navy);
+      margin: 0;
+    }
+
+    .faq-intro-copy p {
+      color: var(--muted);
+      font-size: 16px;
+      margin: 0 0 18px;
+    }
+
+
+    /* =========================================
+       FAQ SECTION
+    ========================================= */
+
+    .faq-section {
+      background: var(--light);
+    }
+
+    .faq-wrapper {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .faq-category {
+      margin-bottom: 55px;
+    }
+
+    .faq-category:last-child {
+      margin-bottom: 0;
+    }
+
+    .faq-category-title {
+      font-family: Poppins;
+      color: var(--navy);
+      font-size: 25px;
+      margin: 0 0 22px;
+    }
+
+    .faq-list {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      overflow: hidden;
+    }
+
+    .faq-list details {
+      border-bottom: 1px solid var(--line);
+    }
+
+    .faq-list details:last-child {
+      border-bottom: 0;
+    }
+
+    .faq-list summary {
+      padding: 24px 28px;
+      cursor: pointer;
+      font-family: Poppins;
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--navy);
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .faq-list summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .faq-list summary:after {
+      content: "+";
+      color: var(--gold);
+      font-size: 24px;
+      font-weight: 400;
+      flex-shrink: 0;
+    }
+
+    .faq-list details[open] summary:after {
+      content: "−";
+    }
+
+    .faq-answer {
+      padding: 0 28px 25px;
+    }
+
+    .faq-answer p {
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.75;
+      margin: 0;
+      max-width: 760px;
+    }
+
+    .faq-answer a {
+      color: var(--navy);
+      font-weight: 600;
+      border-bottom: 1px solid var(--gold);
+    }
+
+
+    /* =========================================
+       SERVICE LINKS
+    ========================================= */
+
+    .faq-links {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+      margin-top: 35px;
+    }
+
+    .faq-link-card {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 30px;
+      transition: .3s ease;
+    }
+
+    .faq-link-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--gold);
+      box-shadow: 0 15px 40px rgba(15,39,71,.08);
+    }
+
+    .faq-link-card span {
+      color: var(--gold);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+
+    .faq-link-card h3 {
+      font-family: Poppins;
+      color: var(--navy);
+      font-size: 20px;
+      margin: 20px 0 10px;
+    }
+
+    .faq-link-card p {
+      color: var(--muted);
+      font-size: 13px;
+      margin: 0 0 20px;
+    }
+
+    .faq-link-card a {
+      color: var(--gold);
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+
+    /* =========================================
+       CTA
+    ========================================= */
+
+    .faq-cta {
+      background: var(--navy);
+      border-radius: 28px;
+      padding: 65px;
+      text-align: center;
+      color: #fff;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .faq-cta h2 {
+      font-family: Poppins;
+      font-size: 39px;
+      line-height: 1.2;
+      margin: 0 0 20px;
+    }
+
+    .faq-cta p {
+      color: rgba(255,255,255,.68);
+      font-size: 15px;
+      max-width: 620px;
+      margin: 0 auto 30px;
+    }
+
+    .faq-cta-actions {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+
+    /* =========================================
+       RESPONSIVE
+    ========================================= */
+
+    @media(max-width:800px) {
+
+      .faq-hero {
+        min-height: 560px;
+      }
+
+      .faq-hero-content {
+        padding: 80px 0 60px;
+      }
+
+      .faq-hero h1 {
+        font-size: 42px;
+        letter-spacing: -1.3px;
+      }
+
+      .faq-hero p:not(.eyebrow) {
+        font-size: 15px;
+      }
+
+      .faq-intro {
+        grid-template-columns: 1fr;
+        gap: 35px;
+      }
+
+      .faq-intro h2 {
+        font-size: 31px;
+      }
+
+      .faq-links {
+        grid-template-columns: 1fr;
+      }
+
+      .faq-cta {
+        padding: 40px 28px;
+      }
+
+      .faq-cta h2 {
+        font-size: 31px;
+      }
+
+    }
+
+
+    @media(max-width:480px) {
+
+      .faq-hero h1 {
+        font-size: 35px;
+      }
+
+      .faq-list summary {
+        padding: 21px 20px;
+        font-size: 14px;
+      }
+
+      .faq-answer {
+        padding: 0 20px 22px;
+      }
+
+      .faq-cta-actions {
+        display: grid;
+      }
+
+      .faq-cta-actions .btn {
+        width: 100%;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================
+     HEADER
+========================================= -->
+
+<header class="site-header" id="top">
+
+  <div class="container nav-wrap">
+
+    <!-- LOGO -->
+    <a class="brand" href="index.html" aria-label="STAYEST home">
+      <img src="images/stayest_logo.png" alt="STAYEST" class="logo-image">
+    </a>
+
+    <!-- DESKTOP NAVIGATION -->
+    <nav class="desktop-nav" aria-label="Main navigation">
+
+      <a href="index.html">Home</a>
+
+      <a href="about.html">About</a>
+
+      <a href="services.html">Services</a>
+
+      <a href="properties.html">Properties</a>
+
+      <!-- MORE -->
+      <button class="nav-more" type="button" aria-expanded="false">
+        More <span>⌄</span>
+      </button>
+
+      <div class="more-menu">
+
+        <a href="guaranteed-rent.html">Guaranteed Rent</a>
+
+        <a href="company-let.html">Company Let</a>
+
+        <a href="why-choose-us.html">Why Choose Us</a>
+
+        <a href="areas.html">Areas We Cover</a>
+
+        <a href="faq.html">FAQs</a>
+
+        <a href="contact.html">Contact</a>
+
+      </div>
+
+    </nav>
+
+    <!-- HEADER ACTIONS -->
+    <div class="nav-actions">
+
+      <!-- PHONE -->
+      <a class="phone" href="tel:+447384040875">
+        ☎ <span>+44 7384 040875</span>
+      </a>
+
+      <!-- BOOK NOW -->
+      <a class="btn btn-navy btn-small" href="properties.html">
+        Book Now
+      </a>
+
+      <!-- FREE ASSESSMENT -->
+      <a class="btn btn-gold btn-small" href="contact.html">
+        Free Assessment
+      </a>
+
+      <!-- MOBILE MENU -->
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Open menu"
+        aria-expanded="false">
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+      </button>
+
+    </div>
+
+  </div>
+
+  <!-- MOBILE NAVIGATION -->
+  <nav class="mobile-nav" aria-label="Mobile navigation">
+
+    <a href="index.html">Home</a>
+
+    <a href="about.html">About</a>
+
+    <a href="services.html">Services</a>
+
+    <a href="properties.html">Properties</a>
+
+    <a href="guaranteed-rent.html">Guaranteed Rent</a>
+
+    <a href="company-let.html">Company Let</a>
+
+    <a href="why-choose-us.html">Why Choose Us</a>
+
+    <a href="areas.html">Areas We Cover</a>
+
+    <a href="faq.html">FAQs</a>
+
+    <a href="contact.html">Contact</a>
+
+  </nav>
+
+</header>
+
+
+
+<!-- =========================================
+     MAIN
+========================================= -->
+
+<main>
+
+
+<!-- HERO -->
+
+<section class="faq-hero">
+
+  <div class="faq-hero-bg"></div>
+
+  <div class="container faq-hero-content reveal">
+
+    <p class="eyebrow">
+      FREQUENTLY ASKED QUESTIONS
+    </p>
+
+    <h1>
+      Clear answers.<br>
+      <span>No unnecessary complexity.</span>
+    </h1>
+
+    <p>
+      Answers to the questions landlords and property partners
+      commonly ask before working with STAYEST.
+    </p>
+
+  </div>
+
+</section>
+
+
+
+<!-- INTRO -->
+
+<section class="section">
+
+  <div class="container">
+
+    <div class="faq-intro reveal">
+
+      <div>
+
+        <p class="eyebrow">
+          BEFORE YOU GET STARTED
+        </p>
+
+        <h2>
+          Straightforward answers for property owners.
+        </h2>
+
+      </div>
+
+
+      <div class="faq-intro-copy">
+
+        <p>
+          We believe property agreements should be clear from
+          the beginning. This page answers some of the most
+          common questions we receive from landlords, investors
+          and property partners.
+        </p>
+
+        <p>
+          For detailed information about our individual services,
+          we've provided direct links to the relevant pages below.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- FAQ -->
+
+<section class="section faq-section">
+
+  <div class="container">
+
+    <div class="faq-wrapper">
+
+
+      <!-- GENERAL -->
+
+      <div class="faq-category reveal">
+
+        <p class="eyebrow">
+          GENERAL
+        </p>
+
+        <h2 class="faq-category-title">
+          General Questions
+        </h2>
+
+
+        <div class="faq-list">
+
+
+          <details open>
+
+            <summary>
+              What does STAYEST do?
+            </summary>
+
+            <div class="faq-answer">
+
+              <p>
+                STAYEST is a UK company let and property management
+                business. We work with landlords, investors, letting
+                agents and property partners to provide professional
+                company letting and managed property solutions.
+              </p>
+
+            </div>
+
+          </details>
+
+
+          <details>
+
+            <summary>
+              What types of properties do you consider?
+            </summary>
+
+            <div class="faq-answer">
+
+              <p>
+                We primarily consider residential properties that
+                are suitable for professional company letting.
+                Each property is assessed individually based on
+                location, condition, layout and suitability.
+              </p>
+
+            </div>
+
+          </details>
+
+
+          <details>
+
+            <summary>
+              Which areas do you cover?
+            </summary>
+
+            <div class="faq-answer">
+
+              <p>
+                We currently focus on selected locations across
+                London, Greater London and surrounding areas.
+                You can see our current coverage on our
+                <a href="areas.html">Areas We Cover</a> page.
+              </p>
+
+            </div>
+
+          </details>
+
+
+          <details>
+
+            <summary>
+              Do you accept properties outside your listed areas?
+            </summary>
+
+            <div class="faq-answer">
+
+              <p>
+                Our coverage is continuing to expand. If your
+                property is outside our current locations, you
+                are still welcome to contact us. We can consider
+                suitable properties on an individual basis.
+              </p>
+
+            </div>
+
+          </details>
+
+
+        </div>
+
+      </div>
+
+
+
+      <!-- WORKING WITH STAYEST -->
+
+      <div class="faq-category reveal">
+
+        <p class="eyebrow">
+          WORKING WITH STAYEST
+        </p>
+
+        <h2 class="faq-category-title">
+          Starting a Partnership
+        </h2>
+
+
+        <div class="faq-list">
+
+
+          <details>
+
+            <summary>
+              How do I get my property assessed?
+            </summary>
+
+            <div class="faq-answer">
+
+              <p>
+                Simply contact us through our property enquiry
+                form, email or telephone. We'll ask for some
+                basic information about the property and review
+                its suitability.
+              </p>
+
+            </div>
+
+          </details>
+
+
+          <details>
+
+            <summary>
+              Is the initial property assessment free?
+            </summary>
+
+            <div class="faq-answer">
+
+              <p>
+                Yes. The initial property assessment is provided
+                without obligation. We'll review the opportunity
+                before discussing any commercial proposal.
+              </p>
+
+            </div>
+
+          </details>
+
+
+          <details>
+
+            <summary>
+              How long does the assessment take?
+            </summary>
+
+            <div class="faq-answer">
+
+              <p>
+                The time required depends on the property and the
+                information available. Once we have the necessary
+                details, we'll aim to review the opportunity and
+                respond as promptly as possible.
+              </p>
+
+            </div>
+
+          </details>
+
+
+          <details>
+
+            <summary>
+              Am I committed to working with STAYEST after an assessment?
+            </summary>
+
+            <div class="faq-answer">
+
+              <p>
+                No. An initial assessment and discussion does not
+                commit you to entering into an agreement. Any
+                commercial arrangement is discussed and agreed
+                before a contract is entered into.
+              </p>
+
+            </div>
+
+          </details>
+
+
+        </div>
+
+      </div>
+
+
+
+      <!-- PROPERTY MANAGEMENT -->
+
+      <div class="faq-category reveal">
+
+        <p class="eyebrow">
+          PROPERTY MANAGEMENT
+        </p>
+
+        <h2 class="faq-category-title">
+          Managing Your Property
+        </h2>
+
+
+        <div class="faq-list">
+
+
+          <details>
+
+            <summary>
+              Will STAYEST manage the property?
+            </summary>
+
+            <div class="faq-answer">
+
+              <p>
+                Our service can include professional property
+                management covering areas such as occupancy,
+                cleaning, inspections, maintenance coordination,
+                compliance documentation and property care.
+              </p>
+
+            </div>
+
+          </details>
+
+
+          <details>
+
+            <summary>
+              Who handles maintenance issues?
+            </summary>
+
+            <div class="faq-answer">
+
+              <p>
+                Our operations team coordinates maintenance and
+                works with appropriate contractors. Responsibilities
+                and approval thresholds can be agreed as part of
+                the property arrangement.
+              </p>
+
+            </div>
+
+          </details>
+
+
+          <details>
+
+            <summary>
+              How are property inspections handled?
+            </summary>
+
+            <div class="faq-answer">
+
+              <p>
+                Where inspections form part of the agreed service,
+                they are scheduled and documented so that the
+                property's condition can be monitored and reported.
+              </p>
+
+            </div>
+
+          </details>
+
+
+          <details>
+
+            <summary>
+              Who do I contact if I have a question about my property?
+            </summary>
+
+            <div class="faq-answer">
+
+              <p>
+                STAYEST provides a clear point of contact for
+                property partners. You can also contact our team
+                directly through our <a href="contact.html">Contact</a>
+                page.
+              </p>
+
+            </div>
+
+          </details>
+
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- DEDICATED SERVICE LINKS -->
+
+<section class="section">
+
+  <div class="container">
+
+    <div class="section-intro centered reveal">
+
+      <p class="eyebrow">
+        EXPLORE OUR SERVICES
+      </p>
+
+      <h2>
+        Want to understand our services in more detail?
+      </h2>
+
+      <p>
+        Visit the dedicated pages below for a complete
+        explanation of how each solution works.
+      </p>
+
+    </div>
+
+
+    <div class="faq-links">
+
+
+      <div class="faq-link-card reveal">
+
+        <span>01</span>
+
+        <h3>
+          Company Let
+        </h3>
+
+        <p>
+          Learn how our company let structure works and how
+          STAYEST manages the property throughout the agreement.
+        </p>
+
+        <a href="company-let.html">
+          Explore Company Let →
+        </a>
+
+      </div>
+
+
+      <div class="faq-link-card reveal">
+
+        <span>02</span>
+
+        <h3>
+          Guaranteed Rent
+        </h3>
+
+        <p>
+          Understand our approach to predictable monthly
+          rental income and long-term landlord partnerships.
+        </p>
+
+        <a href="guaranteed-rent.html">
+          Explore Guaranteed Rent →
+        </a>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- CTA -->
+
+<section class="section">
+
+  <div class="container">
+
+    <div class="faq-cta reveal">
+
+      <p class="eyebrow">
+        STILL HAVE A QUESTION?
+      </p>
+
+      <h2>
+        Let's talk about your property.
+      </h2>
+
+      <p>
+        Every property is different. If you cannot find the
+        answer you're looking for, speak directly with our team
+        and we'll be happy to understand your requirements.
+      </p>
+
+
+      <div class="faq-cta-actions">
+
+        <a
+          href="contact.html"
+          class="btn btn-gold"
+        >
+          Get Free Property Assessment
+        </a>
+
+        <a
+          href="tel:+447384040875"
+          class="btn btn-outline-light"
+        >
+          Call +44 7384 040875
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+</main>
+
+
+
+<!-- =========================================
+     WHATSAPP
+========================================= -->
+
+<a
+  class="whatsapp"
+  href="https://wa.me/447384040875?text=Hello%20STAYEST%2C%20I%E2%80%99m%20interested%20in%20your%20company%20let%20and%20guaranteed%20rent%20services.%20I%E2%80%99d%20like%20to%20discuss%20my%20property%20and%20find%20out%20whether%20it%20would%20be%20suitable.%20Thank%20you."
+  target="_blank"
+  rel="noopener"
+>
+  ◉ <span>WhatsApp us</span>
+</a>
+
+
+
+<!-- =========================================
+     FOOTER
+========================================= -->
+
+<footer class="footer">
+
+  <div class="container footer-grid">
+
+
+    <!-- BRAND -->
+
+    <div>
+
+      <div class="footer-brand">
+
+        <img
+          src="images/stayest_logo.png"
+          alt="STAYEST"
+          class="footer-logo"
+        >
+
+      </div>
+
+      <p>
+        Guaranteed rent and fully managed company let solutions
+        for landlords, agents and investors across the United Kingdom.
+      </p>
+
+    </div>
+
+
+    <!-- EXPLORE -->
+
+    <div>
+
+      <h4>Explore</h4>
+
+      <a href="services.html">Services</a>
+
+      <a href="guaranteed-rent.html">
+        Guaranteed Rent
+      </a>
+
+      <a href="company-let.html">
+        Company Let
+      </a>
+
+      <a href="properties.html">
+        Properties
+      </a>
+
+    </div>
+
+
+    <!-- COMPANY -->
+
+    <div>
+
+      <h4>Company</h4>
+
+      <a href="about.html">
+        About
+      </a>
+
+      <a href="why-choose-us.html">
+        Why Choose Us
+      </a>
+
+      <a href="areas.html">
+        Areas We Cover
+      </a>
+
+      <a href="faq.html">
+        FAQs
+      </a>
+
+    </div>
+
+
+    <!-- CONTACT -->
+
+    <div>
+
+      <h4>Contact</h4>
+
+      <a href="tel:+447384040875">
+        +44 7384 040875
+      </a>
+
+      <a href="mailto:stayestltd@gmail.com">
+        stayestltd@gmail.com
+      </a>
+
+      <span>
+        United Kingdom
+      </span>
+
+    </div>
+
+  </div>
+
+
+  <!-- FOOTER BOTTOM -->
+
+  <div class="container footer-bottom">
+
+    <span>
+      © 2026 STAYEST. All rights reserved.
+    </span>
+
+    <div>
+
+      <a href="privacy.html">
+        Privacy Policy
+      </a>
+
+      <a href="terms.html">
+        Terms & Conditions
+      </a>
+
+      <a href="#">
+        Cookies
+      </a>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>

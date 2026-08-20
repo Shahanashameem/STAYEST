@@ -1,0 +1,1420 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Company Let | STAYEST</title>
+
+  <meta name="description"
+    content="STAYEST provides professional company let solutions for UK landlords, investors, letting agents and property owners.">
+
+  <meta name="theme-color" content="#0F2747">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+
+
+  <style>
+
+    /* =========================
+       COMPANY LET HERO
+    ========================= */
+
+    .company-hero {
+      background:
+        linear-gradient(
+          90deg,
+          rgba(8,29,55,.96),
+          rgba(15,39,71,.82)
+        ),
+        url("https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=2200&q=85")
+        center/cover;
+
+      color:#fff;
+      padding:120px 0 110px;
+    }
+
+    .company-hero h1 {
+      font-family:Poppins,sans-serif;
+      font-size:58px;
+      line-height:1.1;
+      letter-spacing:-2px;
+      max-width:850px;
+      margin:0 0 25px;
+    }
+
+    .company-hero h1 span {
+      color:var(--gold);
+    }
+
+    .company-hero-copy {
+      max-width:680px;
+      color:rgba(255,255,255,.75);
+      font-size:17px;
+      margin-bottom:35px;
+    }
+
+
+    /* =========================
+       INTRO
+    ========================= */
+
+    .company-intro {
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:90px;
+      align-items:start;
+    }
+
+    .company-intro h2,
+    .company-section-title h2 {
+      font-family:Poppins,sans-serif;
+      color:var(--navy);
+      font-size:40px;
+      line-height:1.18;
+      letter-spacing:-1.2px;
+      margin:0;
+    }
+
+    .company-intro-copy {
+      color:var(--muted);
+      font-size:16px;
+    }
+
+    .company-intro-copy p {
+      margin:0 0 18px;
+    }
+
+
+    /* =========================
+       BENEFITS
+    ========================= */
+
+    .company-benefits {
+      background:var(--light);
+    }
+
+    .company-section-title {
+      max-width:750px;
+      margin-bottom:55px;
+    }
+
+    .company-section-title p {
+      color:var(--muted);
+      font-size:16px;
+      margin-top:20px;
+    }
+
+    .company-benefit-grid {
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:16px;
+    }
+
+    .company-benefit {
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:22px;
+      padding:32px;
+      min-height:220px;
+      transition:.3s;
+    }
+
+    .company-benefit:hover {
+      transform:translateY(-4px);
+      border-color:rgba(199,163,75,.6);
+      box-shadow:0 18px 45px rgba(15,39,71,.08);
+    }
+
+    .company-benefit span {
+      color:var(--gold);
+      font-size:12px;
+      font-weight:700;
+      letter-spacing:2px;
+    }
+
+    .company-benefit h3 {
+      font-family:Poppins,sans-serif;
+      color:var(--navy);
+      font-size:18px;
+      margin:30px 0 12px;
+    }
+
+    .company-benefit p {
+      color:var(--muted);
+      font-size:13px;
+      margin:0;
+    }
+
+
+    /* =========================
+       COMPANY VS TENANCY
+    ========================= */
+
+    .comparison-wrap {
+      margin-top:50px;
+      border:1px solid var(--line);
+      border-radius:24px;
+      overflow:hidden;
+    }
+
+    .comparison-row {
+      display:grid;
+      grid-template-columns:1.2fr 1fr 1fr;
+    }
+
+    .comparison-row > div {
+      padding:20px 24px;
+      border-right:1px solid var(--line);
+      border-bottom:1px solid var(--line);
+      font-size:14px;
+    }
+
+    .comparison-row > div:last-child {
+      border-right:0;
+    }
+
+    .comparison-row:last-child > div {
+      border-bottom:0;
+    }
+
+    .comparison-header {
+      background:var(--navy);
+      color:#fff;
+      font-family:Poppins,sans-serif;
+      font-weight:600;
+    }
+
+    .comparison-header > div {
+      border-color:rgba(255,255,255,.15);
+    }
+
+    .comparison-row > div:first-child {
+      font-weight:600;
+      color:var(--navy);
+    }
+
+    .comparison-row:not(.comparison-header) > div {
+      color:var(--muted);
+    }
+
+
+    /* =========================
+       RESPONSIBILITIES
+    ========================= */
+
+    .responsibility-section {
+      background:var(--navy);
+      color:#fff;
+    }
+
+    .responsibility-section .company-section-title h2 {
+      color:#fff;
+    }
+
+    .responsibility-section .company-section-title p {
+      color:rgba(255,255,255,.68);
+    }
+
+    .responsibility-grid {
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:18px;
+    }
+
+    .responsibility-card {
+      border:1px solid rgba(255,255,255,.15);
+      border-radius:22px;
+      padding:35px;
+    }
+
+    .responsibility-card h3 {
+      font-family:Poppins,sans-serif;
+      font-size:21px;
+      margin:0 0 20px;
+    }
+
+    .responsibility-card ul {
+      padding:0;
+      margin:0;
+      list-style:none;
+    }
+
+    .responsibility-card li {
+      color:rgba(255,255,255,.68);
+      font-size:14px;
+      padding:10px 0;
+      border-bottom:1px solid rgba(255,255,255,.08);
+    }
+
+    .responsibility-card li:last-child {
+      border-bottom:0;
+    }
+
+    .responsibility-card li::before {
+      content:"✓";
+      color:var(--gold);
+      margin-right:10px;
+      font-weight:700;
+    }
+
+
+    /* =========================
+       WHO IT'S FOR
+    ========================= */
+
+    .company-types {
+      display:grid;
+      grid-template-columns:repeat(5,1fr);
+      gap:12px;
+      margin-top:45px;
+    }
+
+    .company-type {
+      border:1px solid var(--line);
+      border-radius:18px;
+      padding:25px 18px;
+      text-align:center;
+      font-family:Poppins,sans-serif;
+      font-size:14px;
+      color:var(--navy);
+    }
+
+
+    /* =========================
+       PROCESS
+    ========================= */
+
+    .company-process {
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:16px;
+      margin-top:50px;
+    }
+
+    .company-step {
+      border:1px solid var(--line);
+      border-radius:20px;
+      padding:30px;
+      min-height:210px;
+    }
+
+    .company-step span {
+      color:var(--gold);
+      font-size:12px;
+      font-weight:700;
+      letter-spacing:2px;
+    }
+
+    .company-step h3 {
+      font-family:Poppins,sans-serif;
+      color:var(--navy);
+      font-size:18px;
+      margin:28px 0 10px;
+    }
+
+    .company-step p {
+      color:var(--muted);
+      font-size:13px;
+      margin:0;
+    }
+
+
+    /* =========================
+       CTA
+    ========================= */
+
+    .company-cta {
+      background:var(--light);
+    }
+
+    .company-cta-box {
+      background:var(--navy);
+      border-radius:28px;
+      padding:65px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:50px;
+      color:#fff;
+    }
+
+    .company-cta-box h2 {
+      font-family:Poppins,sans-serif;
+      font-size:38px;
+      line-height:1.2;
+      margin:0 0 15px;
+    }
+
+    .company-cta-box p {
+      color:rgba(255,255,255,.68);
+      max-width:600px;
+      margin:0;
+    }
+
+
+    /* =========================
+       RESPONSIVE
+    ========================= */
+
+    @media(max-width:900px) {
+
+      .company-benefit-grid,
+      .company-process {
+        grid-template-columns:repeat(2,1fr);
+      }
+
+      .company-types {
+        grid-template-columns:repeat(3,1fr);
+      }
+
+    }
+
+
+    @media(max-width:800px) {
+
+      .company-hero {
+        padding:85px 0;
+      }
+
+      .company-hero h1 {
+        font-size:42px;
+      }
+
+      .company-intro {
+        grid-template-columns:1fr;
+        gap:30px;
+      }
+
+      .company-benefit-grid,
+      .company-process {
+        grid-template-columns:1fr;
+      }
+
+      .company-types {
+        grid-template-columns:1fr 1fr;
+      }
+
+      .responsibility-grid {
+        grid-template-columns:1fr;
+      }
+
+      .comparison-wrap {
+        overflow-x:auto;
+      }
+
+      .comparison-row {
+        min-width:700px;
+      }
+
+      .company-cta-box {
+        display:grid;
+        padding:40px 28px;
+        gap:30px;
+      }
+
+      .company-cta-box h2 {
+        font-size:31px;
+      }
+
+    }
+
+
+    @media(max-width:480px) {
+
+      .company-hero h1 {
+        font-size:35px;
+      }
+
+      .company-types {
+        grid-template-columns:1fr;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+  <!-- =========================
+       HEADER
+  ========================= -->
+
+  <header class="site-header" id="top">
+
+  <div class="container nav-wrap">
+
+    <!-- LOGO -->
+    <a class="brand" href="index.html" aria-label="STAYEST home">
+      <img src="images/stayest_logo.png" alt="STAYEST" class="logo-image">
+    </a>
+
+    <!-- DESKTOP NAVIGATION -->
+    <nav class="desktop-nav" aria-label="Main navigation">
+
+      <a href="index.html">Home</a>
+
+      <a href="about.html">About</a>
+
+      <a href="services.html">Services</a>
+
+      <a href="properties.html">Properties</a>
+
+      <!-- MORE -->
+      <button class="nav-more" type="button" aria-expanded="false">
+        More <span>⌄</span>
+      </button>
+
+      <div class="more-menu">
+
+        <a href="guaranteed-rent.html">Guaranteed Rent</a>
+
+        <a href="company-let.html">Company Let</a>
+
+        <a href="why-choose-us.html">Why Choose Us</a>
+
+        <a href="areas.html">Areas We Cover</a>
+
+        <a href="faq.html">FAQs</a>
+
+        <a href="contact.html">Contact</a>
+
+      </div>
+
+    </nav>
+
+    <!-- HEADER ACTIONS -->
+    <div class="nav-actions">
+
+      <!-- PHONE -->
+      <a class="phone" href="tel:+447384040875">
+        ☎ <span>+44 7384 040875</span>
+      </a>
+
+      <!-- BOOK NOW -->
+      <a class="btn btn-navy btn-small" href="properties.html">
+        Book Now
+      </a>
+
+      <!-- FREE ASSESSMENT -->
+      <a class="btn btn-gold btn-small" href="contact.html">
+        Free Assessment
+      </a>
+
+      <!-- MOBILE MENU -->
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Open menu"
+        aria-expanded="false">
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+      </button>
+
+    </div>
+
+  </div>
+
+  <!-- MOBILE NAVIGATION -->
+  <nav class="mobile-nav" aria-label="Mobile navigation">
+
+    <a href="index.html">Home</a>
+
+    <a href="about.html">About</a>
+
+    <a href="services.html">Services</a>
+
+    <a href="properties.html">Properties</a>
+
+    <a href="guaranteed-rent.html">Guaranteed Rent</a>
+
+    <a href="company-let.html">Company Let</a>
+
+    <a href="why-choose-us.html">Why Choose Us</a>
+
+    <a href="areas.html">Areas We Cover</a>
+
+    <a href="faq.html">FAQs</a>
+
+    <a href="contact.html">Contact</a>
+
+  </nav>
+
+</header>
+
+
+
+  <main>
+
+
+    <!-- =========================
+         HERO
+    ========================= -->
+
+    <section class="company-hero">
+
+      <div class="container reveal">
+
+        <p class="eyebrow">
+          COMPANY LET
+        </p>
+
+        <h1>
+          One agreement.
+          <br>
+          One accountable partner.
+          <br>
+          <span>Professional property management.</span>
+        </h1>
+
+        <p class="company-hero-copy">
+          A company let gives landlords a professional corporate
+          counterparty while STAYEST takes responsibility for the
+          agreed operational management of the property.
+        </p>
+
+        <div class="hero-actions">
+
+          <a
+            class="btn btn-gold"
+            href="contact.html">
+
+            Discuss Your Property
+
+          </a>
+
+          <a
+            class="btn btn-outline-light"
+            href="guaranteed-rent.html">
+
+            Explore Guaranteed Rent
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         WHAT IS COMPANY LET
+    ========================= -->
+
+    <section class="section">
+
+      <div class="container">
+
+        <div class="company-intro reveal">
+
+          <div>
+
+            <p class="eyebrow">
+              THE COMPANY LET MODEL
+            </p>
+
+            <h2>
+              A professional alternative
+              to traditional letting.
+            </h2>
+
+          </div>
+
+
+          <div class="company-intro-copy">
+
+            <p>
+              A company let is an agreement where the landlord
+              grants a company the right to occupy or operate the
+              property under agreed contractual terms.
+            </p>
+
+            <p>
+              Instead of your agreement being directly with an
+              individual occupant, STAYEST becomes your corporate
+              contractual partner.
+            </p>
+
+            <p>
+              We then manage the agreed operational responsibilities
+              associated with the property, helping create a more
+              structured relationship between the property owner
+              and the operator.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         BENEFITS
+    ========================= -->
+
+    <section class="section company-benefits">
+
+      <div class="container">
+
+        <div class="company-section-title reveal">
+
+          <p class="eyebrow">
+            WHY CHOOSE A COMPANY LET
+          </p>
+
+          <h2>
+            Designed around the
+            landlord relationship.
+          </h2>
+
+          <p>
+            Our company let model is built to reduce operational
+            complexity while creating a clear commercial relationship.
+          </p>
+
+        </div>
+
+
+        <div class="company-benefit-grid">
+
+
+          <article class="company-benefit reveal">
+
+            <span>01</span>
+
+            <h3>
+              Corporate Counterparty
+            </h3>
+
+            <p>
+              Your agreement is with STAYEST as a business rather
+              than directly with an individual occupant.
+            </p>
+
+          </article>
+
+
+          <article class="company-benefit reveal">
+
+            <span>02</span>
+
+            <h3>
+              Long-Term Structure
+            </h3>
+
+            <p>
+              Longer contractual arrangements can provide greater
+              stability than short tenancy cycles.
+            </p>
+
+          </article>
+
+
+          <article class="company-benefit reveal">
+
+            <span>03</span>
+
+            <h3>
+              Professional Operations
+            </h3>
+
+            <p>
+              Our team manages the operational responsibilities
+              agreed within the company let arrangement.
+            </p>
+
+          </article>
+
+
+          <article class="company-benefit reveal">
+
+            <span>04</span>
+
+            <h3>
+              Clear Responsibilities
+            </h3>
+
+            <p>
+              The agreement establishes who is responsible for
+              rent, management, maintenance and other obligations.
+            </p>
+
+          </article>
+
+
+          <article class="company-benefit reveal">
+
+            <span>05</span>
+
+            <h3>
+              Property Oversight
+            </h3>
+
+            <p>
+              Inspections, reporting and maintenance coordination
+              help maintain oversight of the property.
+            </p>
+
+          </article>
+
+
+          <article class="company-benefit reveal">
+
+            <span>06</span>
+
+            <h3>
+              One Point of Contact
+            </h3>
+
+            <p>
+              Landlords have a clear business relationship and
+              designated contact for their property.
+            </p>
+
+          </article>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         COMPARISON
+    ========================= -->
+
+    <section class="section">
+
+      <div class="container">
+
+        <div class="company-section-title reveal">
+
+          <p class="eyebrow">
+            UNDERSTANDING THE DIFFERENCE
+          </p>
+
+          <h2>
+            Company Let vs
+            Traditional Tenancy
+          </h2>
+
+          <p>
+            The exact responsibilities always depend on the contract,
+            but the structure of the relationship can be different.
+          </p>
+
+        </div>
+
+
+        <div class="comparison-wrap reveal">
+
+
+          <div class="comparison-row comparison-header">
+
+            <div>
+              AREA
+            </div>
+
+            <div>
+              COMPANY LET
+            </div>
+
+            <div>
+              TRADITIONAL TENANCY
+            </div>
+
+          </div>
+
+
+          <div class="comparison-row">
+
+            <div>
+              Contractual relationship
+            </div>
+
+            <div>
+              Landlord → Company
+            </div>
+
+            <div>
+              Landlord → Individual tenant
+            </div>
+
+          </div>
+
+
+          <div class="comparison-row">
+
+            <div>
+              Operational management
+            </div>
+
+            <div>
+              Company manages agreed responsibilities
+            </div>
+
+            <div>
+              Landlord / agent manages tenancy
+            </div>
+
+          </div>
+
+
+          <div class="comparison-row">
+
+            <div>
+              Agreement length
+            </div>
+
+            <div>
+              Can be structured for longer terms
+            </div>
+
+            <div>
+              Depends on tenancy agreement
+            </div>
+
+          </div>
+
+
+          <div class="comparison-row">
+
+            <div>
+              Property operations
+            </div>
+
+            <div>
+              Managed according to contract
+            </div>
+
+            <div>
+              Usually landlord / agent responsibility
+            </div>
+
+          </div>
+
+
+          <div class="comparison-row">
+
+            <div>
+              Rental structure
+            </div>
+
+            <div>
+              Commercial terms agreed in advance
+            </div>
+
+            <div>
+              Standard tenancy rent arrangement
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         RESPONSIBILITIES
+    ========================= -->
+
+    <section class="section responsibility-section">
+
+      <div class="container">
+
+        <div class="company-section-title reveal">
+
+          <p class="eyebrow">
+            CLEAR RESPONSIBILITIES
+          </p>
+
+          <h2>
+            Everyone knows
+            what they are responsible for.
+          </h2>
+
+          <p>
+            The company let agreement sets out the responsibilities
+            of both parties clearly before the arrangement begins.
+          </p>
+
+        </div>
+
+
+        <div class="responsibility-grid">
+
+
+          <div class="responsibility-card reveal">
+
+            <h3>
+              STAYEST Responsibilities
+            </h3>
+
+            <ul>
+
+              <li>
+                Agreed rental payments
+              </li>
+
+              <li>
+                Occupancy management
+              </li>
+
+              <li>
+                Property operations
+              </li>
+
+              <li>
+                Cleaning coordination
+              </li>
+
+              <li>
+                Maintenance coordination
+              </li>
+
+              <li>
+                Inspections and reporting
+              </li>
+
+            </ul>
+
+          </div>
+
+
+          <div class="responsibility-card reveal">
+
+            <h3>
+              Landlord Responsibilities
+            </h3>
+
+            <ul>
+
+              <li>
+                Providing the property as agreed
+              </li>
+
+              <li>
+                Ensuring required ownership documentation
+              </li>
+
+              <li>
+                Property-related obligations agreed in contract
+              </li>
+
+              <li>
+                Major works where applicable
+              </li>
+
+              <li>
+                Structural responsibilities where applicable
+              </li>
+
+              <li>
+                Landlord insurance and statutory obligations
+              </li>
+
+            </ul>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         WHO IT'S FOR
+    ========================= -->
+
+    <section class="section">
+
+      <div class="container">
+
+        <div class="company-section-title reveal">
+
+          <p class="eyebrow">
+            WHO WE WORK WITH
+          </p>
+
+          <h2>
+            Built for professional
+            property owners.
+          </h2>
+
+          <p>
+            We work with a range of property owners and professional
+            partners looking for structured company letting solutions.
+          </p>
+
+        </div>
+
+
+        <div class="company-types">
+
+          <div class="company-type reveal">
+            Private Landlords
+          </div>
+
+          <div class="company-type reveal">
+            Property Investors
+          </div>
+
+          <div class="company-type reveal">
+            Letting Agents
+          </div>
+
+          <div class="company-type reveal">
+            Developers
+          </div>
+
+          <div class="company-type reveal">
+            Portfolio Landlords
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         PROCESS
+    ========================= -->
+
+    <section class="section company-benefits">
+
+      <div class="container">
+
+        <div class="company-section-title reveal">
+
+          <p class="eyebrow">
+            OUR PROCESS
+          </p>
+
+          <h2>
+            Six steps from
+            conversation to company let.
+          </h2>
+
+          <p>
+            We keep the process structured and transparent from the
+            first property assessment through to ongoing management.
+          </p>
+
+        </div>
+
+
+        <div class="company-process">
+
+
+          <article class="company-step reveal">
+
+            <span>01</span>
+
+            <h3>
+              Property Assessment
+            </h3>
+
+            <p>
+              We assess the location, property type, condition
+              and suitability.
+            </p>
+
+          </article>
+
+
+          <article class="company-step reveal">
+
+            <span>02</span>
+
+            <h3>
+              Proposal
+            </h3>
+
+            <p>
+              We provide a clear commercial proposal based on
+              the property.
+            </p>
+
+          </article>
+
+
+          <article class="company-step reveal">
+
+            <span>03</span>
+
+            <h3>
+              Agreement
+            </h3>
+
+            <p>
+              Both parties review and agree the company let
+              terms before signing.
+            </p>
+
+          </article>
+
+
+          <article class="company-step reveal">
+
+            <span>04</span>
+
+            <h3>
+              Preparation
+            </h3>
+
+            <p>
+              Compliance, inventory, furnishing and other agreed
+              preparation is completed.
+            </p>
+
+          </article>
+
+
+          <article class="company-step reveal">
+
+            <span>05</span>
+
+            <h3>
+              Occupancy
+            </h3>
+
+            <p>
+              Professional occupancy begins under the agreed
+              operational structure.
+            </p>
+
+          </article>
+
+
+          <article class="company-step reveal">
+
+            <span>06</span>
+
+            <h3>
+              Ongoing Management
+            </h3>
+
+            <p>
+              Our team manages the agreed responsibilities for
+              the duration of the arrangement.
+            </p>
+
+          </article>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         CTA
+    ========================= -->
+
+    <section class="section company-cta">
+
+      <div class="container">
+
+        <div class="company-cta-box reveal">
+
+          <div>
+
+            <p class="eyebrow">
+              COMPANY LET
+            </p>
+
+            <h2>
+              Could your property
+              work with STAYEST?
+            </h2>
+
+            <p>
+              Tell us about your property and we'll assess its
+              suitability for our company let model.
+            </p>
+
+          </div>
+
+
+          <a
+            class="btn btn-gold"
+            href="contact.html">
+
+            Get Property Assessment
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+
+  <!-- =========================
+       FOOTER
+  ========================= -->
+
+  <footer class="footer">
+
+    <div class="container footer-grid">
+
+
+      <div>
+
+        <img
+          src="images/stayest_logo.png"
+          alt="STAYEST"
+          class="footer-logo">
+
+        <p>
+          Guaranteed rent and fully managed company let solutions
+          for landlords, agents and investors across the United Kingdom.
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <h4>Explore</h4>
+
+        <a href="index.html">Home</a>
+
+        <a href="about.html">About</a>
+
+        <a href="services.html">Services</a>
+
+        <a href="properties.html">Properties</a>
+
+      </div>
+
+
+      <div>
+
+        <h4>Company</h4>
+
+        <a href="guaranteed-rent.html">
+          Guaranteed Rent
+        </a>
+
+        <a href="company-let.html">
+          Company Let
+        </a>
+
+        <a href="why-choose-us.html">
+          Why Choose Us
+        </a>
+
+        <a href="areas.html">
+          Areas We Cover
+        </a>
+
+      </div>
+
+
+      <div>
+
+        <h4>Contact</h4>
+
+        <a href="tel:+447384040875">
+          +44 7384 040875
+        </a>
+
+        <a href="mailto:stayestltd@gmail.com">
+          stayestltd@gmail.com
+        </a>
+
+        <span>
+          United Kingdom
+        </span>
+
+      </div>
+
+
+    </div>
+
+
+    <div class="container footer-bottom">
+
+      <span>
+        © 2026 STAYEST. All rights reserved.
+      </span>
+
+      <div>
+
+        <a href="privacy-policy.html">
+          Privacy Policy
+        </a>
+
+        <a href="terms.html">
+          Terms & Conditions
+        </a>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!-- WHATSAPP -->
+
+  <a
+    class="whatsapp"
+    href="https://wa.me/447384040875?text=Hello%20STAYEST%2C%20I%E2%80%99m%20interested%20in%20your%20company%20let%20and%20guaranteed%20rent%20services.%20I%E2%80%99d%20like%20to%20discuss%20my%20property%20and%20find%20out%20whether%20it%20would%20be%20suitable.%20Thank%20you."
+    target="_blank"
+    rel="noopener"
+  >
+    ◉ <span>WhatsApp us</span>
+  </a>
+
+
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>

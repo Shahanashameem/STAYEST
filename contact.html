@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Contact STAYEST | Property Assessment & Enquiries</title>
+
+  <meta name="description"
+    content="Contact STAYEST to discuss your property, request a free assessment or learn more about our company let and guaranteed rent solutions.">
+
+  <meta name="theme-color" content="#0F2747">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+
+
+  <style>
+
+    /* ================================
+       CONTACT HERO
+    ================================= */
+
+    .contact-hero {
+      min-height: 500px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      background: var(--navy);
+    }
+
+    .contact-hero-bg {
+      position: absolute;
+      inset: 0;
+
+      background:
+        linear-gradient(
+          90deg,
+          rgba(8,29,55,.96) 0%,
+          rgba(15,39,71,.88) 50%,
+          rgba(15,39,71,.65) 100%
+        ),
+        url("https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=2200&q=85")
+        center/cover;
+    }
+
+    .contact-hero-content {
+      position: relative;
+      z-index: 1;
+      color: #fff;
+      padding: 95px 0;
+      max-width: 800px;
+    }
+
+    .contact-hero h1 {
+      font-family: Poppins, sans-serif;
+      font-size: 58px;
+      line-height: 1.1;
+      letter-spacing: -2px;
+      margin: 0 0 28px;
+    }
+
+    .contact-hero h1 span {
+      color: var(--gold);
+    }
+
+    .contact-hero p:not(.eyebrow) {
+      color: rgba(255,255,255,.78);
+      font-size: 17px;
+      max-width: 680px;
+      margin: 0;
+    }
+
+
+    /* ================================
+       CONTACT CONTENT
+    ================================= */
+
+    .contact-main {
+      background: var(--light);
+    }
+
+    .contact-layout {
+      display: grid;
+      grid-template-columns: .8fr 1.2fr;
+      gap: 70px;
+      align-items: start;
+    }
+
+
+    /* ================================
+       CONTACT INFORMATION
+    ================================= */
+
+    .contact-info h2 {
+      font-family: Poppins;
+      color: var(--navy);
+      font-size: 39px;
+      line-height: 1.18;
+      letter-spacing: -1.2px;
+      margin: 0 0 22px;
+    }
+
+    .contact-info > p {
+      color: var(--muted);
+      font-size: 15px;
+      max-width: 470px;
+      margin-bottom: 35px;
+    }
+
+    .contact-details {
+      display: grid;
+      gap: 15px;
+    }
+
+    .contact-detail {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 22px;
+    }
+
+    .contact-detail small {
+      display: block;
+      color: var(--gold);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      margin-bottom: 8px;
+    }
+
+    .contact-detail strong {
+      display: block;
+      font-family: Poppins;
+      color: var(--navy);
+      font-size: 15px;
+      margin-bottom: 4px;
+    }
+
+    .contact-detail a,
+    .contact-detail span {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .contact-detail a:hover {
+      color: var(--gold);
+    }
+
+
+    /* ================================
+       FORM
+    ================================= */
+
+    .contact-form {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 25px;
+      padding: 40px;
+      box-shadow: 0 20px 60px rgba(15,39,71,.07);
+    }
+
+    .contact-form h2 {
+      font-family: Poppins;
+      color: var(--navy);
+      font-size: 25px;
+      margin: 0 0 8px;
+    }
+
+    .contact-form-intro {
+      color: var(--muted);
+      font-size: 13px;
+      margin: 0 0 28px;
+    }
+
+    .contact-form label {
+      display: block;
+      color: var(--navy);
+      font-size: 12px;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+
+    .contact-form input,
+    .contact-form select,
+    .contact-form textarea {
+      display: block;
+      width: 100%;
+      margin-top: 7px;
+      padding: 13px 14px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      outline: none;
+      background: #fff;
+      color: var(--text);
+    }
+
+    .contact-form input:focus,
+    .contact-form select:focus,
+    .contact-form textarea:focus {
+      border-color: var(--gold);
+      box-shadow: 0 0 0 3px rgba(199,163,75,.12);
+    }
+
+    .contact-form textarea {
+      resize: vertical;
+      min-height: 130px;
+    }
+
+    .contact-form .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .form-note {
+      color: #7b8796;
+      font-size: 11px;
+      margin-top: 14px;
+    }
+
+
+    /* ================================
+       QUICK CONTACT
+    ================================= */
+
+    .quick-contact {
+      background: #fff;
+    }
+
+    .quick-contact-box {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
+
+    .quick-card {
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 30px;
+      transition: .3s ease;
+    }
+
+    .quick-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--gold);
+    }
+
+    .quick-card span {
+      color: var(--gold);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+
+    .quick-card h3 {
+      font-family: Poppins;
+      color: var(--navy);
+      font-size: 20px;
+      margin: 18px 0 8px;
+    }
+
+    .quick-card p {
+      color: var(--muted);
+      font-size: 13px;
+      margin: 0 0 18px;
+    }
+
+    .quick-card a {
+      color: var(--navy);
+      font-weight: 600;
+      font-size: 13px;
+    }
+
+
+    /* ================================
+       CTA
+    ================================= */
+
+    .contact-cta {
+      background: var(--navy);
+      border-radius: 28px;
+      padding: 65px;
+      text-align: center;
+      color: #fff;
+    }
+
+    .contact-cta h2 {
+      font-family: Poppins;
+      font-size: 39px;
+      line-height: 1.2;
+      margin: 0 0 20px;
+    }
+
+    .contact-cta p {
+      color: rgba(255,255,255,.68);
+      max-width: 620px;
+      margin: 0 auto 30px;
+      font-size: 15px;
+    }
+
+    .contact-cta-actions {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+
+    /* ================================
+       RESPONSIVE
+    ================================= */
+
+    @media(max-width:800px) {
+
+      .contact-hero {
+        min-height: 540px;
+      }
+
+      .contact-hero-content {
+        padding: 80px 0 60px;
+      }
+
+      .contact-hero h1 {
+        font-size: 42px;
+        letter-spacing: -1.3px;
+      }
+
+      .contact-hero p:not(.eyebrow) {
+        font-size: 15px;
+      }
+
+      .contact-layout {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .contact-info h2 {
+        font-size: 31px;
+      }
+
+      .contact-form {
+        padding: 30px 25px;
+      }
+
+      .contact-form .form-row {
+        grid-template-columns: 1fr;
+      }
+
+      .quick-contact-box {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-cta {
+        padding: 40px 28px;
+      }
+
+      .contact-cta h2 {
+        font-size: 31px;
+      }
+
+    }
+
+
+    @media(max-width:480px) {
+
+      .contact-hero h1 {
+        font-size: 35px;
+      }
+
+      .contact-cta-actions {
+        display: grid;
+      }
+
+      .contact-cta-actions .btn {
+        width: 100%;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================
+     HEADER
+========================================= -->
+
+<header class="site-header" id="top">
+
+  <div class="container nav-wrap">
+
+    <!-- LOGO -->
+    <a class="brand" href="index.html" aria-label="STAYEST home">
+      <img src="images/stayest_logo.png" alt="STAYEST" class="logo-image">
+    </a>
+
+    <!-- DESKTOP NAVIGATION -->
+    <nav class="desktop-nav" aria-label="Main navigation">
+
+      <a href="index.html">Home</a>
+
+      <a href="about.html">About</a>
+
+      <a href="services.html">Services</a>
+
+      <a href="properties.html">Properties</a>
+
+      <!-- MORE -->
+      <button class="nav-more" type="button" aria-expanded="false">
+        More <span>⌄</span>
+      </button>
+
+      <div class="more-menu">
+
+        <a href="guaranteed-rent.html">Guaranteed Rent</a>
+
+        <a href="company-let.html">Company Let</a>
+
+        <a href="why-choose-us.html">Why Choose Us</a>
+
+        <a href="areas.html">Areas We Cover</a>
+
+        <a href="faq.html">FAQs</a>
+
+        <a href="contact.html">Contact</a>
+
+      </div>
+
+    </nav>
+
+    <!-- HEADER ACTIONS -->
+    <div class="nav-actions">
+
+      <!-- PHONE -->
+      <a class="phone" href="tel:+447384040875">
+        ☎ <span>+44 7384 040875</span>
+      </a>
+
+      <!-- BOOK NOW -->
+      <a class="btn btn-navy btn-small" href="properties.html">
+        Book Now
+      </a>
+
+      <!-- FREE ASSESSMENT -->
+      <a class="btn btn-gold btn-small" href="contact.html">
+        Free Assessment
+      </a>
+
+      <!-- MOBILE MENU -->
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Open menu"
+        aria-expanded="false">
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+      </button>
+
+    </div>
+
+  </div>
+
+  <!-- MOBILE NAVIGATION -->
+  <nav class="mobile-nav" aria-label="Mobile navigation">
+
+    <a href="index.html">Home</a>
+
+    <a href="about.html">About</a>
+
+    <a href="services.html">Services</a>
+
+    <a href="properties.html">Properties</a>
+
+    <a href="guaranteed-rent.html">Guaranteed Rent</a>
+
+    <a href="company-let.html">Company Let</a>
+
+    <a href="why-choose-us.html">Why Choose Us</a>
+
+    <a href="areas.html">Areas We Cover</a>
+
+    <a href="faq.html">FAQs</a>
+
+    <a href="contact.html">Contact</a>
+
+  </nav>
+
+</header>
+
+
+
+<!-- =========================================
+     MAIN
+========================================= -->
+
+<main>
+
+
+<!-- HERO -->
+
+<section class="contact-hero">
+
+  <div class="contact-hero-bg"></div>
+
+  <div class="container contact-hero-content reveal">
+
+    <p class="eyebrow">
+      GET IN TOUCH
+    </p>
+
+    <h1>
+      Let's talk about<br>
+      <span>your property.</span>
+    </h1>
+
+    <p>
+      Whether you're a private landlord, letting agent, investor
+      or developer, we'd be happy to understand your property
+      and discuss how STAYEST could work with you.
+    </p>
+
+  </div>
+
+</section>
+
+
+
+<!-- CONTACT MAIN -->
+
+<section class="section contact-main">
+
+  <div class="container">
+
+    <div class="contact-layout">
+
+
+      <!-- CONTACT INFORMATION -->
+
+      <div class="contact-info reveal">
+
+        <p class="eyebrow">
+          PROPERTY PARTNERSHIPS
+        </p>
+
+        <h2>
+          Start with a conversation.
+        </h2>
+
+        <p>
+          Tell us a little about your property and your
+          requirements. We'll review the opportunity and
+          come back to you with an initial assessment.
+        </p>
+
+
+        <div class="contact-details">
+
+
+          <div class="contact-detail">
+
+            <small>PHONE</small>
+
+            <strong>
+              Speak to our team
+            </strong>
+
+            <a href="tel:+447384040875">
+              +44 7384 040875
+            </a>
+
+          </div>
+
+
+          <div class="contact-detail">
+
+            <small>EMAIL</small>
+
+            <strong>
+              Property enquiries
+            </strong>
+
+            <a href="mailto:stayestltd@gmail.com">
+              stayestltd@gmail.com
+            </a>
+
+          </div>
+
+
+          <div class="contact-detail">
+
+            <small>WHATSAPP</small>
+
+            <strong>
+              Message us directly
+            </strong>
+
+            <a
+              class="whatsapp"
+              href="https://wa.me/447384040875?text=Hello%20STAYEST%2C%20I%E2%80%99m%20interested%20in%20your%20company%20let%20and%20guaranteed%20rent%20services.%20I%E2%80%99d%20like%20to%20discuss%20my%20property%20and%20find%20out%20whether%20it%20would%20be%20suitable.%20Thank%20you."
+              target="_blank"
+              rel="noopener"
+            >
+              ◉ <span>WhatsApp us</span>
+            </a>
+
+          </div>
+
+
+          <div class="contact-detail">
+
+            <small>LOCATION</small>
+
+            <strong>
+              United Kingdom
+            </strong>
+
+            <span>
+              Serving selected UK locations
+            </span>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+
+
+      <!-- FORM -->
+
+      <div class="contact-form reveal">
+
+        <h2>
+          Property Enquiry
+        </h2>
+
+        <p class="contact-form-intro">
+          Complete the form below and we'll get back to you.
+        </p>
+
+
+        <form id="contact-form">
+
+
+          <div class="form-row">
+
+            <label>
+              Name
+
+              <input
+                type="text"
+                name="name"
+                placeholder="Your name"
+                required
+              >
+
+            </label>
+
+
+            <label>
+              Email
+
+              <input
+                type="email"
+                name="email"
+                placeholder="you@example.com"
+                required
+              >
+
+            </label>
+
+          </div>
+
+
+          <div class="form-row">
+
+            <label>
+              Phone
+
+              <input
+                type="tel"
+                name="phone"
+                placeholder="+44"
+              >
+
+            </label>
+
+
+            <label>
+              Bedrooms
+
+              <select name="bedrooms">
+
+                <option value="">
+                  Select
+                </option>
+
+                <option>1</option>
+
+                <option>2</option>
+
+                <option>3</option>
+
+                <option>4</option>
+
+                <option>5+</option>
+
+              </select>
+
+            </label>
+
+          </div>
+
+
+          <label>
+            Property Address
+
+            <input
+              type="text"
+              name="address"
+              placeholder="Property address"
+            >
+
+          </label>
+
+
+          <label>
+            Property Type
+
+            <select name="property_type">
+
+              <option value="">
+                Select property type
+              </option>
+
+              <option>
+                House
+              </option>
+
+              <option>
+                Flat / Apartment
+              </option>
+
+              <option>
+                HMO
+              </option>
+
+              <option>
+                Other
+              </option>
+
+            </select>
+
+          </label>
+
+
+          <label>
+            Message
+
+            <textarea
+              name="message"
+              placeholder="Tell us about your property"
+              rows="5"
+            ></textarea>
+
+          </label>
+
+
+          <button
+            class="btn btn-navy"
+            type="submit"
+          >
+            Send Property Enquiry
+          </button>
+
+
+          <p class="form-note">
+            By submitting this enquiry, you are asking STAYEST
+            to contact you regarding your property.
+          </p>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- QUICK CONTACT -->
+
+<section class="section quick-contact">
+
+  <div class="container">
+
+    <div class="section-intro centered reveal">
+
+      <p class="eyebrow">
+        CHOOSE HOW TO CONTACT US
+      </p>
+
+      <h2>
+        We're easy to reach.
+      </h2>
+
+      <p>
+        Prefer to speak directly? You can contact STAYEST
+        using whichever method is most convenient.
+      </p>
+
+    </div>
+
+
+    <div class="quick-contact-box">
+
+
+      <div class="quick-card reveal">
+
+        <span>01</span>
+
+        <h3>
+          Call Us
+        </h3>
+
+        <p>
+          Speak directly with our team about your property
+          or partnership requirements.
+        </p>
+
+        <a href="tel:+447384040875">
+          +44 7384 040875 →
+        </a>
+
+      </div>
+
+
+      <div class="quick-card reveal">
+
+        <span>02</span>
+
+        <h3>
+          WhatsApp
+        </h3>
+
+        <p>
+          Send us a message with some basic information
+          about your property.
+        </p>
+
+        <a
+          href="https://wa.me/447384040875"
+          target="_blank"
+          rel="noopener"
+        >
+          Message us on WhatsApp →
+        </a>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- CTA -->
+
+<section class="section">
+
+  <div class="container">
+
+    <div class="contact-cta reveal">
+
+      <p class="eyebrow">
+        READY TO EXPLORE?
+      </p>
+
+      <h2>
+        Find out what your property could achieve.
+      </h2>
+
+      <p>
+        Start with a free, no-obligation property assessment.
+        We'll review your property and discuss the most suitable
+        approach.
+      </p>
+
+
+      <div class="contact-cta-actions">
+
+        <a
+          href="#contact-form"
+          class="btn btn-gold"
+        >
+          Start Your Assessment
+        </a>
+
+        <a
+          href="services.html"
+          class="btn btn-outline-light"
+        >
+          Explore Our Services
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+</main>
+
+
+
+<!-- =========================================
+     WHATSAPP
+========================================= -->
+
+<a
+  class="whatsapp"
+  href="https://wa.me/447384040875"
+  target="_blank"
+  rel="noopener"
+>
+  ◉ <span>WhatsApp us</span>
+</a>
+
+
+
+<!-- =========================================
+     FOOTER
+========================================= -->
+
+<footer class="footer">
+
+  <div class="container footer-grid">
+
+
+    <div>
+
+      <div class="footer-brand">
+
+        <img
+          src="images/stayest_logo.png"
+          alt="STAYEST"
+          class="footer-logo"
+        >
+
+      </div>
+
+      <p>
+        Guaranteed rent and fully managed company let solutions
+        for landlords, agents and investors across the United Kingdom.
+      </p>
+
+    </div>
+
+
+    <div>
+
+      <h4>Explore</h4>
+
+      <a href="services.html">Services</a>
+
+      <a href="guaranteed-rent.html">
+        Guaranteed Rent
+      </a>
+
+      <a href="company-let.html">
+        Company Let
+      </a>
+
+      <a href="properties.html">
+        Properties
+      </a>
+
+    </div>
+
+
+    <div>
+
+      <h4>Company</h4>
+
+      <a href="about.html">
+        About
+      </a>
+
+      <a href="why-choose-us.html">
+        Why Choose Us
+      </a>
+
+      <a href="areas.html">
+        Areas We Cover
+      </a>
+
+      <a href="faq.html">
+        FAQs
+      </a>
+
+    </div>
+
+
+    <div>
+
+      <h4>Contact</h4>
+
+      <a href="tel:+447384040875">
+        +44 7384 040875
+      </a>
+
+      <a href="mailto:stayestltd@gmail.com">
+        stayestltd@gmail.com
+      </a>
+
+      <span>
+        United Kingdom
+      </span>
+
+    </div>
+
+  </div>
+
+
+  <div class="container footer-bottom">
+
+    <span>
+      © 2026 STAYEST. All rights reserved.
+    </span>
+
+    <div>
+
+      <a href="privacy.html">
+        Privacy Policy
+      </a>
+
+      <a href="terms.html">
+        Terms & Conditions
+      </a>
+
+      <a href="#">
+        Cookies
+      </a>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+
+<!-- =========================================
+     CONTACT FORM SCRIPT
+========================================= -->
+
+<script>
+
+  const contactForm = document.querySelector('#contact-form');
+
+  contactForm?.addEventListener('submit', function(e) {
+
+    e.preventDefault();
+
+    const button = this.querySelector('button');
+
+    button.textContent = 'Enquiry Ready to Send';
+
+    button.disabled = true;
+
+    setTimeout(() => {
+
+      alert(
+        'Thank you for your enquiry. We will contact you shortly.'
+      );
+
+      button.textContent = 'Send Property Enquiry';
+
+      button.disabled = false;
+
+      this.reset();
+
+    }, 500);
+
+  });
+
+</script>
+
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>

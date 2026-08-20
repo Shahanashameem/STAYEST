@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Services | STAYEST Company Let & Property Management</title>
+
+  <meta name="description"
+    content="Explore STAYEST company let, guaranteed rent, property management, professional cleaning, guest management, maintenance coordination and property setup services across the UK.">
+
+  <meta name="theme-color" content="#0F2747">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+
+    /* =========================
+       SERVICES HERO
+    ========================= */
+
+    .services-hero {
+      background: var(--navy);
+      color: #fff;
+      padding: 110px 0 100px;
+    }
+
+    .services-hero h1 {
+      font-family: Poppins, sans-serif;
+      font-size: 56px;
+      line-height: 1.12;
+      letter-spacing: -1.8px;
+      max-width: 850px;
+      margin: 0 0 25px;
+    }
+
+    .services-hero h1 span {
+      color: var(--gold);
+    }
+
+    .services-hero-copy {
+      max-width: 720px;
+      color: rgba(255,255,255,.72);
+      font-size: 17px;
+    }
+
+
+    /* =========================
+       SERVICES INTRO
+    ========================= */
+
+    .service-intro {
+      max-width: 800px;
+      margin-bottom: 60px;
+    }
+
+    .service-intro h2 {
+      font-family: Poppins, sans-serif;
+      color: var(--navy);
+      font-size: 40px;
+      line-height: 1.18;
+      letter-spacing: -1.2px;
+      margin: 0 0 20px;
+    }
+
+    .service-intro p {
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+
+    /* =========================
+       SERVICE LIST
+    ========================= */
+
+    .services-list {
+      display: grid;
+      gap: 0;
+    }
+
+    .service-detail {
+      display: grid;
+      grid-template-columns: 80px 1fr 1.2fr;
+      gap: 40px;
+      padding: 45px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .service-detail:last-child {
+      border-bottom: 1px solid var(--line);
+    }
+
+    .service-number {
+      color: var(--gold);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+
+    .service-detail h3 {
+      font-family: Poppins, sans-serif;
+      color: var(--navy);
+      font-size: 25px;
+      margin: 0;
+    }
+
+    .service-detail p {
+      color: var(--muted);
+      font-size: 14px;
+      margin: 0 0 20px;
+      line-height: 1.75;
+    }
+
+
+    /* =========================
+       SERVICE BULLETS
+    ========================= */
+
+    .service-points {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .service-points li {
+      position: relative;
+      padding-left: 22px;
+      margin-bottom: 9px;
+      color: var(--text);
+      font-size: 13px;
+    }
+
+    .service-points li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: var(--gold);
+      font-weight: 700;
+    }
+
+
+    /* =========================
+       PROCESS SECTION
+    ========================= */
+
+    .service-dark {
+      background: var(--navy);
+      color: #fff;
+    }
+
+    .service-dark .service-intro h2 {
+      color: #fff;
+    }
+
+    .service-dark .service-intro p {
+      color: rgba(255,255,255,.68);
+    }
+
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-top: 50px;
+    }
+
+    .process-card {
+      border: 1px solid rgba(255,255,255,.15);
+      border-radius: 20px;
+      padding: 32px;
+      min-height: 230px;
+      transition: .3s;
+    }
+
+    .process-card:hover {
+      transform: translateY(-5px);
+      border-color: rgba(199,163,75,.65);
+    }
+
+    .process-card span {
+      color: var(--gold);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+
+    .process-card h3 {
+      font-family: Poppins, sans-serif;
+      font-size: 19px;
+      margin: 35px 0 12px;
+    }
+
+    .process-card p {
+      color: rgba(255,255,255,.65);
+      font-size: 14px;
+      margin: 0;
+    }
+
+
+    /* =========================
+       CTA
+    ========================= */
+
+    .services-cta {
+      background: var(--light);
+    }
+
+    .services-cta-box {
+      background: var(--navy);
+      color: #fff;
+      border-radius: 28px;
+      padding: 65px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 50px;
+    }
+
+    .services-cta-box h2 {
+      font-family: Poppins, sans-serif;
+      font-size: 38px;
+      line-height: 1.2;
+      margin: 0 0 15px;
+    }
+
+    .services-cta-box p {
+      color: rgba(255,255,255,.68);
+      max-width: 600px;
+      margin: 0;
+    }
+
+
+    /* =========================
+       RESPONSIVE
+    ========================= */
+
+    @media(max-width:1050px) {
+
+      .service-detail {
+        grid-template-columns: 60px 1fr 1fr;
+        gap: 25px;
+      }
+
+    }
+
+
+    @media(max-width:800px) {
+
+      .services-hero {
+        padding: 80px 0;
+      }
+
+      .services-hero h1 {
+        font-size: 40px;
+      }
+
+      .service-detail {
+        grid-template-columns: 55px 1fr;
+        gap: 20px;
+      }
+
+      .service-detail > div:last-child {
+        grid-column: 2;
+      }
+
+      .process-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .services-cta-box {
+        display: grid;
+        padding: 40px 28px;
+        gap: 30px;
+      }
+
+      .services-cta-box h2 {
+        font-size: 31px;
+      }
+
+    }
+
+
+    @media(max-width:480px) {
+
+      .services-hero h1 {
+        font-size: 34px;
+      }
+
+      .service-detail {
+        grid-template-columns: 1fr;
+      }
+
+      .service-detail > div:last-child {
+        grid-column: auto;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+  <!-- =========================
+       HEADER
+  ========================= -->
+
+<header class="site-header" id="top">
+
+  <div class="container nav-wrap">
+
+    <!-- LOGO -->
+    <a class="brand" href="index.html" aria-label="STAYEST home">
+      <img src="images/stayest_logo.png" alt="STAYEST" class="logo-image">
+    </a>
+
+    <!-- DESKTOP NAVIGATION -->
+    <nav class="desktop-nav" aria-label="Main navigation">
+
+      <a href="index.html">Home</a>
+
+      <a href="about.html">About</a>
+
+      <a href="services.html">Services</a>
+
+      <a href="properties.html">Properties</a>
+
+      <!-- MORE -->
+      <button class="nav-more" type="button" aria-expanded="false">
+        More <span>⌄</span>
+      </button>
+
+      <div class="more-menu">
+
+        <a href="guaranteed-rent.html">Guaranteed Rent</a>
+
+        <a href="company-let.html">Company Let</a>
+
+        <a href="why-choose-us.html">Why Choose Us</a>
+
+        <a href="areas.html">Areas We Cover</a>
+
+        <a href="faq.html">FAQs</a>
+
+        <a href="contact.html">Contact</a>
+
+      </div>
+
+    </nav>
+
+    <!-- HEADER ACTIONS -->
+    <div class="nav-actions">
+
+      <!-- PHONE -->
+      <a class="phone" href="tel:+447384040875">
+        ☎ <span>+44 7384 040875</span>
+      </a>
+
+      <!-- BOOK NOW -->
+      <a class="btn btn-navy btn-small" href="properties.html">
+        Book Now
+      </a>
+
+      <!-- FREE ASSESSMENT -->
+      <a class="btn btn-gold btn-small" href="contact.html">
+        Free Assessment
+      </a>
+
+      <!-- MOBILE MENU -->
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Open menu"
+        aria-expanded="false">
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+      </button>
+
+    </div>
+
+  </div>
+
+  <!-- MOBILE NAVIGATION -->
+  <nav class="mobile-nav" aria-label="Mobile navigation">
+
+    <a href="index.html">Home</a>
+
+    <a href="about.html">About</a>
+
+    <a href="services.html">Services</a>
+
+    <a href="properties.html">Properties</a>
+
+    <a href="guaranteed-rent.html">Guaranteed Rent</a>
+
+    <a href="company-let.html">Company Let</a>
+
+    <a href="why-choose-us.html">Why Choose Us</a>
+
+    <a href="areas.html">Areas We Cover</a>
+
+    <a href="faq.html">FAQs</a>
+
+    <a href="contact.html">Contact</a>
+
+  </nav>
+
+</header>
+
+
+
+  <main>
+
+
+    <!-- =========================
+         HERO
+    ========================= -->
+
+    <section class="services-hero">
+
+      <div class="container reveal">
+
+        <p class="eyebrow">
+          OUR SERVICES
+        </p>
+
+        <h1>
+          Seven services.
+          <br>
+          One agreement.
+          <br>
+          <span>One accountable team.</span>
+        </h1>
+
+        <p class="services-hero-copy">
+          Everything required to let, run and protect a residential
+          property under a corporate agreement — with no separate
+          contracts to manage.
+        </p>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         SEVEN SERVICES
+    ========================= -->
+
+    <section class="section">
+
+      <div class="container">
+
+
+        <div class="service-intro reveal">
+
+          <p class="eyebrow">
+            WHAT WE DO
+          </p>
+
+          <h2>
+            Professional property services,
+            under one agreement.
+          </h2>
+
+          <p>
+            STAYEST brings the key operational services together under
+            one accountable team, giving landlords and property partners
+            a simpler way to manage their property.
+          </p>
+
+        </div>
+
+
+        <div class="services-list">
+
+  <article class="service-box reveal">
+    <div class="service-info">
+      <span class="service-number">01</span>
+      <h3>Company Let</h3>
+      <p>
+        Under a company let, the agreement sits between you and STAYEST
+        as a business — not an individual tenant. We assume responsibility
+        for rent, occupancy and the day-to-day condition of the property
+        for the full term.
+      </p>
+    </div>
+
+    <ul class="service-points">
+      <li>Single corporate counterparty on the agreement</li>
+      <li>Terms typically from 12 to 60 months</li>
+      <li>No tenant-find fees or void-period exposure</li>
+      <li>Property returned in agreed condition at term end</li>
+    </ul>
+  </article>
+
+
+  <article class="service-box reveal">
+    <div class="service-info">
+      <span class="service-number">02</span>
+      <h3>Guaranteed Rent</h3>
+      <p>
+        We agree a monthly figure at the outset and pay it on the same
+        date each month for the duration of the contract. Void periods,
+        arrears and rent collection become our responsibility, not yours.
+      </p>
+    </div>
+
+    <ul class="service-points">
+      <li>Fixed payment date every month</li>
+      <li>Void periods absorbed by STAYEST</li>
+      <li>No commission deducted from the agreed figure</li>
+      <li>Predictable income for lending and portfolio planning</li>
+    </ul>
+  </article>
+
+
+  <article class="service-box reveal">
+    <div class="service-info">
+      <span class="service-number">03</span>
+      <h3>Property Management</h3>
+      <p>
+        Our management team handles occupancy, compliance documentation,
+        contractor coordination, inspections and reporting so that
+        ownership requires nothing more than receiving payment.
+      </p>
+    </div>
+
+    <ul class="service-points">
+      <li>Named account manager for every landlord</li>
+      <li>Compliance certificate tracking and renewals</li>
+      <li>Scheduled inspections with written reports</li>
+      <li>24/7 operational escalation line</li>
+    </ul>
+  </article>
+
+
+  <article class="service-box reveal">
+    <div class="service-info">
+      <span class="service-number">04</span>
+      <h3>Professional Cleaning</h3>
+      <p>
+        Trained cleaning teams operate to a documented checklist with
+        photographic sign-off, protecting finishes, fixtures and the
+        long-term presentation of the property.
+      </p>
+    </div>
+
+    <ul class="service-points">
+      <li>Checklist-driven turnovers with photo sign-off</li>
+      <li>Commercial laundry and linen rotation</li>
+      <li>Deep cleans scheduled through the year</li>
+      <li>Consumables and restocking included</li>
+    </ul>
+  </article>
+
+
+  <article class="service-box reveal">
+    <div class="service-info">
+      <span class="service-number">05</span>
+      <h3>Guest Management</h3>
+      <p>
+        Occupants are identity-checked and referenced before arrival,
+        briefed on house standards, and supported throughout their stay
+        by our operations team.
+      </p>
+    </div>
+
+    <ul class="service-points">
+      <li>Identity and corporate referencing checks</li>
+      <li>Clear occupancy rules and conduct standards</li>
+      <li>In-stay support handled by our team</li>
+      <li>Detailed occupancy records maintained</li>
+    </ul>
+  </article>
+
+
+  <article class="service-box reveal">
+    <div class="service-info">
+      <span class="service-number">06</span>
+      <h3>Maintenance Coordination</h3>
+      <p>
+        Reported issues are triaged, assigned and closed out by our
+        maintenance desk, with landlord approval sought for anything
+        beyond the agreed threshold.
+      </p>
+    </div>
+
+    <ul class="service-points">
+      <li>Insured and vetted contractor panel</li>
+      <li>Priority response for urgent issues</li>
+      <li>Approval thresholds agreed in advance</li>
+      <li>Full works history retained per property</li>
+    </ul>
+  </article>
+
+
+  <article class="service-box reveal">
+    <div class="service-info">
+      <span class="service-number">07</span>
+      <h3>Property Setup</h3>
+      <p>
+        We prepare the property to a consistent professional standard —
+        furnishing, photography, inventory and safety compliance —
+        so it performs from day one.
+      </p>
+    </div>
+
+    <ul class="service-points">
+      <li>Furniture and soft-furnishing specification</li>
+      <li>Professional inventory and schedule of condition</li>
+      <li>Gas, electrical and fire safety compliance</li>
+      <li>Photography and property documentation</li>
+    </ul>
+  </article>
+
+</div>
+
+</div>
+
+    </section>
+
+
+  </main>
+
+
+
+  <!-- =========================
+       FOOTER
+  ========================= -->
+
+  <footer class="footer">
+
+    <div class="container footer-grid">
+
+
+      <div>
+
+        <img
+          src="images/stayest_logo.png"
+          alt="STAYEST"
+          class="footer-logo">
+
+        <p>
+          Guaranteed rent and fully managed company let solutions
+          for landlords, agents and investors across the United Kingdom.
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <h4>Explore</h4>
+
+        <a href="index.html">Home</a>
+
+        <a href="about.html">About</a>
+
+        <a href="services.html">Services</a>
+
+        <a href="properties.html">Properties</a>
+
+      </div>
+
+
+      <div>
+
+        <h4>Company</h4>
+
+        <a href="why-choose-us.html">Why Choose Us</a>
+
+        <a href="areas.html">Areas We Cover</a>
+
+        <a href="faqs.html">FAQs</a>
+
+        <a href="contact.html">Contact</a>
+
+      </div>
+
+
+      <div>
+
+        <h4>Contact</h4>
+
+        <a href="tel:+447384040875">
+          +44 7384 040875
+        </a>
+
+        <a href="mailto:stayestltd@gmail.com">
+          stayestltd@gmail.com
+        </a>
+
+        <span>
+          United Kingdom
+        </span>
+
+      </div>
+
+
+    </div>
+
+
+    <div class="container footer-bottom">
+
+      <span>
+        © 2026 STAYEST. All rights reserved.
+      </span>
+
+      <div>
+
+        <a href="privacy-policy.html">
+          Privacy Policy
+        </a>
+
+        <a href="terms.html">
+          Terms & Conditions
+        </a>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+
+  <!-- WHATSAPP -->
+
+  <a
+    class="whatsapp"
+    href="https://wa.me/447384040875?text=Hello%20STAYEST%2C%20I%E2%80%99m%20interested%20in%20your%20company%20let%20and%20guaranteed%20rent%20services.%20I%E2%80%99d%20like%20to%20discuss%20my%20property%20and%20find%20out%20whether%20it%20would%20be%20suitable.%20Thank%20you."
+    target="_blank"
+    rel="noopener"
+  >
+    ◉ <span>WhatsApp us</span>
+  </a>
+
+
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Areas We Cover | STAYEST</title>
+
+  <meta name="description"
+    content="STAYEST provides company let, guaranteed rent and professional property management solutions across selected locations in London and the South East of England.">
+
+  <meta name="theme-color" content="#0F2747">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+
+    /* =========================================
+       AREAS PAGE
+    ========================================= */
+
+    .areas-hero {
+      min-height: 560px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      background: var(--navy);
+    }
+
+    .areas-hero-bg {
+      position: absolute;
+      inset: 0;
+
+      background:
+        linear-gradient(
+          90deg,
+          rgba(8, 29, 55, .95) 0%,
+          rgba(15, 39, 71, .88) 45%,
+          rgba(15, 39, 71, .62) 100%
+        ),
+        url("https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=2200&q=85")
+        center/cover;
+    }
+
+    .areas-hero-content {
+      position: relative;
+      z-index: 1;
+      color: #fff;
+      padding: 100px 0;
+      max-width: 820px;
+    }
+
+    .areas-hero h1 {
+      font-family: Poppins, sans-serif;
+      font-size: 58px;
+      line-height: 1.1;
+      letter-spacing: -2px;
+      margin: 0 0 28px;
+    }
+
+    .areas-hero h1 span {
+      color: var(--gold);
+    }
+
+    .areas-hero p:not(.eyebrow) {
+      color: rgba(255,255,255,.78);
+      font-size: 17px;
+      max-width: 680px;
+      margin: 0;
+    }
+
+
+    /* INTRO */
+
+    .areas-intro {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 90px;
+      align-items: start;
+    }
+
+    .areas-intro h2 {
+      font-family: Poppins;
+      font-size: 39px;
+      line-height: 1.18;
+      letter-spacing: -1.2px;
+      color: var(--navy);
+      margin: 0;
+    }
+
+    .areas-intro-copy p {
+      color: var(--muted);
+      font-size: 16px;
+      margin: 0 0 18px;
+    }
+
+
+    /* LOCATION SECTIONS */
+
+    .location-section {
+      background: var(--light);
+    }
+
+    .location-heading {
+      max-width: 700px;
+      margin-bottom: 45px;
+    }
+
+    .location-heading h2 {
+      font-family: Poppins;
+      color: var(--navy);
+      font-size: 35px;
+      line-height: 1.2;
+      margin: 0 0 15px;
+    }
+
+    .location-heading p {
+      color: var(--muted);
+      font-size: 15px;
+      margin: 0;
+    }
+
+
+    /* LOCATION GRID */
+
+    .location-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+    }
+
+    .location-card {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 30px;
+      min-height: 170px;
+      position: relative;
+      transition: .3s ease;
+      overflow: hidden;
+    }
+
+    .location-card:hover {
+      transform: translateY(-5px);
+      border-color: var(--gold);
+      box-shadow: 0 18px 45px rgba(15,39,71,.08);
+    }
+
+    .location-number {
+      color: var(--gold);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+
+    .location-card h3 {
+      font-family: Poppins;
+      font-size: 20px;
+      color: var(--navy);
+      margin: 28px 0 8px;
+    }
+
+    .location-card p {
+      color: var(--muted);
+      font-size: 13px;
+      margin: 0;
+    }
+
+
+    /* SOUTH EAST */
+
+    .south-east {
+      background: #fff;
+    }
+
+
+    /* COVERAGE MESSAGE */
+
+    .coverage-box {
+      background: var(--navy);
+      border-radius: 28px;
+      padding: 65px;
+      display: grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 80px;
+      align-items: center;
+      color: #fff;
+    }
+
+    .coverage-box h2 {
+      font-family: Poppins;
+      color: #fff;
+      font-size: 39px;
+      line-height: 1.18;
+      margin: 0 0 20px;
+    }
+
+    .coverage-box p:not(.eyebrow) {
+      color: rgba(255,255,255,.68);
+      max-width: 600px;
+      font-size: 15px;
+      margin: 0 0 25px;
+    }
+
+    .coverage-points {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    .coverage-points div {
+      border: 1px solid rgba(255,255,255,.15);
+      border-radius: 16px;
+      padding: 22px;
+    }
+
+    .coverage-points strong {
+      display: block;
+      color: var(--gold);
+      font-size: 12px;
+    }
+
+    .coverage-points span {
+      display: block;
+      margin-top: 8px;
+      color: rgba(255,255,255,.75);
+      font-size: 13px;
+    }
+
+
+    /* CTA */
+
+    .areas-cta {
+      text-align: center;
+      max-width: 760px;
+      margin: auto;
+    }
+
+    .areas-cta h2 {
+      font-family: Poppins;
+      color: var(--navy);
+      font-size: 39px;
+      line-height: 1.2;
+      margin: 0 0 20px;
+    }
+
+    .areas-cta p {
+      color: var(--muted);
+      font-size: 16px;
+      margin: 0 auto 30px;
+      max-width: 650px;
+    }
+
+    .areas-cta-actions {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+
+    /* RESPONSIVE */
+
+    @media(max-width: 800px) {
+
+      .areas-hero {
+        min-height: 600px;
+      }
+
+      .areas-hero-content {
+        padding: 80px 0 60px;
+      }
+
+      .areas-hero h1 {
+        font-size: 42px;
+        letter-spacing: -1.3px;
+      }
+
+      .areas-hero p:not(.eyebrow) {
+        font-size: 15px;
+      }
+
+      .areas-intro {
+        grid-template-columns: 1fr;
+        gap: 35px;
+      }
+
+      .areas-intro h2 {
+        font-size: 31px;
+      }
+
+      .location-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .coverage-box {
+        grid-template-columns: 1fr;
+        padding: 40px 28px;
+        gap: 35px;
+      }
+
+      .coverage-box h2 {
+        font-size: 31px;
+      }
+
+    }
+
+
+    @media(max-width: 480px) {
+
+      .areas-hero h1 {
+        font-size: 35px;
+      }
+
+      .location-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .coverage-points {
+        grid-template-columns: 1fr;
+      }
+
+      .areas-cta h2 {
+        font-size: 31px;
+      }
+
+      .areas-cta-actions {
+        display: grid;
+      }
+
+      .areas-cta-actions .btn {
+        width: 100%;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================
+     HEADER
+========================================= -->
+
+<header class="site-header" id="top">
+
+  <div class="container nav-wrap">
+
+    <!-- LOGO -->
+    <a class="brand" href="index.html" aria-label="STAYEST home">
+      <img src="images/stayest_logo.png" alt="STAYEST" class="logo-image">
+    </a>
+
+    <!-- DESKTOP NAVIGATION -->
+    <nav class="desktop-nav" aria-label="Main navigation">
+
+      <a href="index.html">Home</a>
+
+      <a href="about.html">About</a>
+
+      <a href="services.html">Services</a>
+
+      <a href="properties.html">Properties</a>
+
+      <!-- MORE -->
+      <button class="nav-more" type="button" aria-expanded="false">
+        More <span>⌄</span>
+      </button>
+
+      <div class="more-menu">
+
+        <a href="guaranteed-rent.html">Guaranteed Rent</a>
+
+        <a href="company-let.html">Company Let</a>
+
+        <a href="why-choose-us.html">Why Choose Us</a>
+
+        <a href="areas.html">Areas We Cover</a>
+
+        <a href="faq.html">FAQs</a>
+
+        <a href="contact.html">Contact</a>
+
+      </div>
+
+    </nav>
+
+    <!-- HEADER ACTIONS -->
+    <div class="nav-actions">
+
+      <!-- PHONE -->
+      <a class="phone" href="tel:+447384040875">
+        ☎ <span>+44 7384 040875</span>
+      </a>
+
+      <!-- BOOK NOW -->
+      <a class="btn btn-navy btn-small" href="properties.html">
+        Book Now
+      </a>
+
+      <!-- FREE ASSESSMENT -->
+      <a class="btn btn-gold btn-small" href="contact.html">
+        Free Assessment
+      </a>
+
+      <!-- MOBILE MENU -->
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Open menu"
+        aria-expanded="false">
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+      </button>
+
+    </div>
+
+  </div>
+
+  <!-- MOBILE NAVIGATION -->
+  <nav class="mobile-nav" aria-label="Mobile navigation">
+
+    <a href="index.html">Home</a>
+
+    <a href="about.html">About</a>
+
+    <a href="services.html">Services</a>
+
+    <a href="properties.html">Properties</a>
+
+    <a href="guaranteed-rent.html">Guaranteed Rent</a>
+
+    <a href="company-let.html">Company Let</a>
+
+    <a href="why-choose-us.html">Why Choose Us</a>
+
+    <a href="areas.html">Areas We Cover</a>
+
+    <a href="faq.html">FAQs</a>
+
+    <a href="contact.html">Contact</a>
+
+  </nav>
+
+</header>
+
+
+
+<!-- =========================================
+     MAIN CONTENT
+========================================= -->
+
+<main>
+
+
+<!-- HERO -->
+
+<section class="areas-hero">
+
+  <div class="areas-hero-bg"></div>
+
+  <div class="container areas-hero-content reveal">
+
+    <p class="eyebrow">
+      AREAS WE COVER
+    </p>
+
+    <h1>
+      Local knowledge.<br>
+      <span>Professional property management.</span>
+    </h1>
+
+    <p>
+      STAYEST works with landlords, investors and property
+      partners across selected locations in London and the
+      South East of England.
+    </p>
+
+  </div>
+
+</section>
+
+
+
+<!-- INTRO -->
+
+<section class="section">
+
+  <div class="container">
+
+    <div class="areas-intro reveal">
+
+      <div>
+
+        <p class="eyebrow">
+          OUR COVERAGE
+        </p>
+
+        <h2>
+          Growing our property network,
+          one location at a time.
+        </h2>
+
+      </div>
+
+
+      <div class="areas-intro-copy">
+
+        <p>
+          Our company let model works best when we understand
+          the local property market, rental demand and the
+          requirements of landlords in each area.
+        </p>
+
+        <p>
+          We are currently focused on selected locations across
+          London, Greater London and surrounding areas. As STAYEST
+          grows, this list will continue to expand.
+        </p>
+
+        <p>
+          If your property is outside our current coverage area,
+          you're still welcome to contact us. We may be able to
+          consider suitable properties on an individual basis.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- LONDON -->
+
+<section class="section location-section">
+
+  <div class="container">
+
+    <div class="location-heading reveal">
+
+      <p class="eyebrow">
+        LONDON & GREATER LONDON
+      </p>
+
+      <h2>
+        Property opportunities across London.
+      </h2>
+
+      <p>
+        We are building relationships with landlords and
+        property partners across key London locations.
+      </p>
+
+    </div>
+
+
+    <div class="location-grid">
+
+
+      <article class="location-card reveal">
+
+        <span class="location-number">01</span>
+
+        <h3>Central London</h3>
+
+        <p>
+          Professional property opportunities across
+          Central London.
+        </p>
+
+      </article>
+
+
+      <article class="location-card reveal">
+
+        <span class="location-number">02</span>
+
+        <h3>Canary Wharf</h3>
+
+        <p>
+          Properties serving London's financial and
+          corporate district.
+        </p>
+
+      </article>
+
+
+      <article class="location-card reveal">
+
+        <span class="location-number">03</span>
+
+        <h3>Stratford</h3>
+
+        <p>
+          Residential properties within East London's
+          growing business and transport hub.
+        </p>
+
+      </article>
+
+
+      <article class="location-card reveal">
+
+        <span class="location-number">04</span>
+
+        <h3>Croydon</h3>
+
+        <p>
+          Professional accommodation opportunities
+          across South London.
+        </p>
+
+      </article>
+
+
+      <article class="location-card reveal">
+
+        <span class="location-number">05</span>
+
+        <h3>Wembley</h3>
+
+        <p>
+          Properties across one of London's major
+          regeneration and connectivity areas.
+        </p>
+
+      </article>
+
+
+      <article class="location-card reveal">
+
+        <span class="location-number">06</span>
+
+        <h3>Greenwich</h3>
+
+        <p>
+          Residential properties across South East
+          London and surrounding districts.
+        </p>
+
+      </article>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- SURROUNDING AREAS -->
+
+<section class="section south-east">
+
+  <div class="container">
+
+    <div class="location-heading reveal">
+
+      <p class="eyebrow">
+        SURROUNDING & SOUTH EAST
+      </p>
+
+      <h2>
+        Expanding beyond London.
+      </h2>
+
+      <p>
+        Our network also extends into selected towns and cities
+        surrounding London and across the South East.
+      </p>
+
+    </div>
+
+
+    <div class="location-grid">
+
+
+      <article class="location-card reveal">
+
+        <span class="location-number">01</span>
+
+        <h3>Reading</h3>
+
+        <p>
+          A major Thames Valley business and residential market.
+        </p>
+
+      </article>
+
+
+      <article class="location-card reveal">
+
+        <span class="location-number">02</span>
+
+        <h3>Slough</h3>
+
+        <p>
+          Strong connectivity and proximity to London and
+          Heathrow.
+        </p>
+
+      </article>
+
+
+      <article class="location-card reveal">
+
+        <span class="location-number">03</span>
+
+        <h3>Watford</h3>
+
+        <p>
+          A well-connected residential and commercial location
+          north-west of London.
+        </p>
+
+      </article>
+
+
+      <article class="location-card reveal">
+
+        <span class="location-number">04</span>
+
+        <h3>Luton</h3>
+
+        <p>
+          Residential and professional accommodation
+          opportunities across the town and surrounding area.
+        </p>
+
+      </article>
+
+
+      <article class="location-card reveal">
+
+        <span class="location-number">05</span>
+
+        <h3>Brighton</h3>
+
+        <p>
+          Residential opportunities across the Brighton
+          property market.
+        </p>
+
+      </article>
+
+
+      <article class="location-card reveal">
+
+        <span class="location-number">06</span>
+
+        <h3>Milton Keynes</h3>
+
+        <p>
+          A growing business and residential market with
+          strong transport connections.
+        </p>
+
+      </article>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- COVERAGE -->
+
+<section class="section">
+
+  <div class="container">
+
+    <div class="coverage-box reveal">
+
+      <div>
+
+        <p class="eyebrow">
+          NOT SURE IF WE COVER YOUR AREA?
+        </p>
+
+        <h2>
+          Your property may still
+          be worth discussing.
+        </h2>
+
+        <p>
+          Our coverage will continue to expand as STAYEST grows.
+          If you have a property outside our current locations,
+          send us the details and we'll let you know whether
+          we can consider it.
+        </p>
+
+        <a
+          href="contact.html"
+          class="btn btn-gold"
+        >
+          Discuss Your Property
+        </a>
+
+      </div>
+
+
+      <div class="coverage-points">
+
+        <div>
+
+          <strong>01</strong>
+
+          <span>
+            Individual property assessment
+          </span>
+
+        </div>
+
+
+        <div>
+
+          <strong>02</strong>
+
+          <span>
+            Location and demand review
+          </span>
+
+        </div>
+
+
+        <div>
+
+          <strong>03</strong>
+
+          <span>
+            Clear commercial proposal
+          </span>
+
+        </div>
+
+
+        <div>
+
+          <strong>04</strong>
+
+          <span>
+            No obligation
+          </span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- FINAL CTA -->
+
+<section class="section">
+
+  <div class="container">
+
+    <div class="areas-cta reveal">
+
+      <p class="eyebrow">
+        LANDLORDS & PROPERTY PARTNERS
+      </p>
+
+      <h2>
+        Have a property in one of our areas?
+      </h2>
+
+      <p>
+        Tell us about your property, location and requirements.
+        Our team will review the opportunity and come back to
+        you with the next steps.
+      </p>
+
+      <div class="areas-cta-actions">
+
+        <a
+          href="contact.html"
+          class="btn btn-gold"
+        >
+          Get Free Property Assessment
+        </a>
+
+        <a
+          href="tel:+447384040875"
+          class="btn btn-navy"
+        >
+          Call +44 7384 040875
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+</main>
+
+
+
+<!-- =========================================
+     WHATSAPP
+========================================= -->
+
+<a
+  class="whatsapp"
+  href="https://wa.me/447384040875?text=Hello%20STAYEST%2C%20I%E2%80%99m%20interested%20in%20your%20company%20let%20and%20guaranteed%20rent%20services.%20I%E2%80%99d%20like%20to%20discuss%20my%20property%20and%20find%20out%20whether%20it%20would%20be%20suitable.%20Thank%20you."
+  target="_blank"
+  rel="noopener"
+>
+  ◉ <span>WhatsApp us</span>
+</a>
+
+
+
+<!-- =========================================
+     FOOTER
+========================================= -->
+
+<footer class="footer">
+
+  <div class="container footer-grid">
+
+
+    <!-- BRAND -->
+
+    <div>
+
+      <div class="footer-brand">
+
+        <img
+          src="images/stayest_logo.png"
+          alt="STAYEST"
+          class="footer-logo"
+        >
+
+      </div>
+
+      <p>
+        Guaranteed rent and fully managed company let solutions
+        for landlords, agents and investors across the United Kingdom.
+      </p>
+
+    </div>
+
+
+    <!-- EXPLORE -->
+
+    <div>
+
+      <h4>Explore</h4>
+
+      <a href="services.html">Services</a>
+
+      <a href="guaranteed-rent.html">
+        Guaranteed Rent
+      </a>
+
+      <a href="company-let.html">
+        Company Let
+      </a>
+
+      <a href="properties.html">
+        Properties
+      </a>
+
+    </div>
+
+
+    <!-- COMPANY -->
+
+    <div>
+
+      <h4>Company</h4>
+
+      <a href="about.html">
+        About
+      </a>
+
+      <a href="why-choose-us.html">
+        Why Choose Us
+      </a>
+
+      <a href="areas.html">
+        Areas We Cover
+      </a>
+
+      <a href="faq.html">
+        FAQs
+      </a>
+
+    </div>
+
+
+    <!-- CONTACT -->
+
+    <div>
+
+      <h4>Contact</h4>
+
+      <a href="tel:+447384040875">
+        +44 7384 040875
+      </a>
+
+      <a href="mailto:stayestltd@gmail.com">
+        stayestltd@gmail.com
+      </a>
+
+      <span>
+        United Kingdom
+      </span>
+
+    </div>
+
+
+  </div>
+
+
+  <!-- FOOTER BOTTOM -->
+
+  <div class="container footer-bottom">
+
+    <span>
+      © 2026 STAYEST. All rights reserved.
+    </span>
+
+
+    <div>
+
+      <a href="privacy.html">
+        Privacy Policy
+      </a>
+
+      <a href="terms.html">
+        Terms & Conditions
+      </a>
+
+      <a href="#">
+        Cookies
+      </a>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>

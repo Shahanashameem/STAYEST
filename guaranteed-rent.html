@@ -1,0 +1,1222 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Guaranteed Rent | STAYEST</title>
+
+  <meta name="description"
+    content="STAYEST provides professional company let and guaranteed rent solutions for UK landlords, investors and property partners.">
+
+  <meta name="theme-color" content="#0F2747">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+
+
+  <style>
+
+    /* =========================
+       GUARANTEED RENT HERO
+    ========================= */
+
+    .rent-hero {
+      background:
+        linear-gradient(
+          90deg,
+          rgba(8,29,55,.96),
+          rgba(15,39,71,.84)
+        ),
+        url("https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=2200&q=85")
+        center/cover;
+
+      color:#fff;
+      padding:120px 0 110px;
+    }
+
+    .rent-hero h1 {
+      font-family:Poppins,sans-serif;
+      font-size:58px;
+      line-height:1.1;
+      letter-spacing:-2px;
+      max-width:800px;
+      margin:0 0 25px;
+    }
+
+    .rent-hero h1 span {
+      color:var(--gold);
+    }
+
+    .rent-hero-copy {
+      max-width:680px;
+      color:rgba(255,255,255,.75);
+      font-size:17px;
+      margin-bottom:35px;
+    }
+
+
+    /* =========================
+       INTRO
+    ========================= */
+
+    .rent-intro {
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:90px;
+      align-items:start;
+    }
+
+    .rent-intro h2,
+    .rent-section-title h2 {
+      font-family:Poppins,sans-serif;
+      color:var(--navy);
+      font-size:40px;
+      line-height:1.18;
+      letter-spacing:-1.2px;
+      margin:0;
+    }
+
+    .rent-intro-copy {
+      color:var(--muted);
+      font-size:16px;
+    }
+
+    .rent-intro-copy p {
+      margin:0 0 18px;
+    }
+
+
+    /* =========================
+       BENEFITS
+    ========================= */
+
+    .rent-benefits {
+      background:var(--light);
+    }
+
+    .rent-section-title {
+      max-width:750px;
+      margin-bottom:55px;
+    }
+
+    .rent-section-title .eyebrow {
+      margin-bottom:20px;
+    }
+
+    .rent-section-title p {
+      color:var(--muted);
+      font-size:16px;
+      margin-top:20px;
+    }
+
+    .rent-benefit-grid {
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:16px;
+    }
+
+    .rent-benefit {
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:22px;
+      padding:32px;
+      min-height:220px;
+      transition:.3s;
+    }
+
+    .rent-benefit:hover {
+      transform:translateY(-4px);
+      border-color:rgba(199,163,75,.6);
+      box-shadow:0 18px 45px rgba(15,39,71,.08);
+    }
+
+    .rent-benefit span {
+      color:var(--gold);
+      font-size:12px;
+      font-weight:700;
+      letter-spacing:2px;
+    }
+
+    .rent-benefit h3 {
+      font-family:Poppins,sans-serif;
+      color:var(--navy);
+      font-size:18px;
+      margin:30px 0 12px;
+    }
+
+    .rent-benefit p {
+      color:var(--muted);
+      font-size:13px;
+      margin:0;
+    }
+
+
+    /* =========================
+       HOW IT WORKS
+    ========================= */
+
+    .rent-process {
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:16px;
+      margin-top:50px;
+    }
+
+    .rent-step {
+      border:1px solid var(--line);
+      border-radius:20px;
+      padding:30px;
+      min-height:220px;
+    }
+
+    .rent-step span {
+      color:var(--gold);
+      font-size:12px;
+      font-weight:700;
+      letter-spacing:2px;
+    }
+
+    .rent-step h3 {
+      font-family:Poppins,sans-serif;
+      color:var(--navy);
+      font-size:18px;
+      margin:30px 0 10px;
+    }
+
+    .rent-step p {
+      color:var(--muted);
+      font-size:13px;
+      margin:0;
+    }
+
+
+    /* =========================
+       MANAGEMENT SECTION
+    ========================= */
+
+    .rent-management {
+      background:var(--navy);
+      color:#fff;
+    }
+
+    .rent-management .rent-section-title h2 {
+      color:#fff;
+    }
+
+    .rent-management .rent-section-title p {
+      color:rgba(255,255,255,.68);
+    }
+
+    .management-grid {
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:16px;
+    }
+
+    .management-card {
+      border:1px solid rgba(255,255,255,.14);
+      border-radius:20px;
+      padding:30px;
+      min-height:180px;
+    }
+
+    .management-card h3 {
+      font-family:Poppins,sans-serif;
+      font-size:18px;
+      margin:0 0 12px;
+    }
+
+    .management-card p {
+      color:rgba(255,255,255,.62);
+      font-size:13px;
+      margin:0;
+    }
+
+
+    /* =========================
+       WHO IT'S FOR
+    ========================= */
+
+    .landlord-types {
+      display:grid;
+      grid-template-columns:repeat(5,1fr);
+      gap:12px;
+      margin-top:45px;
+    }
+
+    .landlord-type {
+      border:1px solid var(--line);
+      border-radius:18px;
+      padding:25px 18px;
+      text-align:center;
+      font-family:Poppins,sans-serif;
+      font-size:14px;
+      color:var(--navy);
+    }
+
+
+    /* =========================
+       CTA
+    ========================= */
+
+    .rent-cta {
+      background:var(--light);
+    }
+
+    .rent-cta-box {
+      background:var(--navy);
+      border-radius:28px;
+      padding:65px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:50px;
+      color:#fff;
+    }
+
+    .rent-cta-box h2 {
+      font-family:Poppins,sans-serif;
+      font-size:38px;
+      line-height:1.2;
+      margin:0 0 15px;
+    }
+
+    .rent-cta-box p {
+      color:rgba(255,255,255,.68);
+      max-width:600px;
+      margin:0;
+    }
+
+
+    /* =========================
+       RESPONSIVE
+    ========================= */
+
+    @media(max-width:900px) {
+
+      .rent-benefit-grid,
+      .rent-process,
+      .management-grid {
+        grid-template-columns:repeat(2,1fr);
+      }
+
+      .landlord-types {
+        grid-template-columns:repeat(3,1fr);
+      }
+
+      .rent-intro {
+        gap:40px;
+      }
+
+    }
+
+
+    @media(max-width:800px) {
+
+      .rent-hero {
+        padding:85px 0;
+      }
+
+      .rent-hero h1 {
+        font-size:42px;
+      }
+
+      .rent-intro {
+        grid-template-columns:1fr;
+        gap:30px;
+      }
+
+      .rent-benefit-grid,
+      .rent-process,
+      .management-grid {
+        grid-template-columns:1fr;
+      }
+
+      .landlord-types {
+        grid-template-columns:1fr 1fr;
+      }
+
+      .rent-cta-box {
+        display:grid;
+        padding:40px 28px;
+        gap:30px;
+      }
+
+      .rent-cta-box h2 {
+        font-size:31px;
+      }
+
+    }
+
+
+    @media(max-width:480px) {
+
+      .rent-hero h1 {
+        font-size:35px;
+      }
+
+      .landlord-types {
+        grid-template-columns:1fr;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+  <!-- =========================
+       HEADER
+  ========================= -->
+
+  <header class="site-header" id="top">
+
+  <div class="container nav-wrap">
+
+    <!-- LOGO -->
+    <a class="brand" href="index.html" aria-label="STAYEST home">
+      <img src="images/stayest_logo.png" alt="STAYEST" class="logo-image">
+    </a>
+
+    <!-- DESKTOP NAVIGATION -->
+    <nav class="desktop-nav" aria-label="Main navigation">
+
+      <a href="index.html">Home</a>
+
+      <a href="about.html">About</a>
+
+      <a href="services.html">Services</a>
+
+      <a href="properties.html">Properties</a>
+
+      <!-- MORE -->
+      <button class="nav-more" type="button" aria-expanded="false">
+        More <span>⌄</span>
+      </button>
+
+      <div class="more-menu">
+
+        <a href="guaranteed-rent.html">Guaranteed Rent</a>
+
+        <a href="company-let.html">Company Let</a>
+
+        <a href="why-choose-us.html">Why Choose Us</a>
+
+        <a href="areas.html">Areas We Cover</a>
+
+        <a href="faq.html">FAQs</a>
+
+        <a href="contact.html">Contact</a>
+
+      </div>
+
+    </nav>
+
+    <!-- HEADER ACTIONS -->
+    <div class="nav-actions">
+
+      <!-- PHONE -->
+      <a class="phone" href="tel:+447384040875">
+        ☎ <span>+44 7384 040875</span>
+      </a>
+
+      <!-- BOOK NOW -->
+      <a class="btn btn-navy btn-small" href="properties.html">
+        Book Now
+      </a>
+
+      <!-- FREE ASSESSMENT -->
+      <a class="btn btn-gold btn-small" href="contact.html">
+        Free Assessment
+      </a>
+
+      <!-- MOBILE MENU -->
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Open menu"
+        aria-expanded="false">
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+      </button>
+
+    </div>
+
+  </div>
+
+  <!-- MOBILE NAVIGATION -->
+  <nav class="mobile-nav" aria-label="Mobile navigation">
+
+    <a href="index.html">Home</a>
+
+    <a href="about.html">About</a>
+
+    <a href="services.html">Services</a>
+
+    <a href="properties.html">Properties</a>
+
+    <a href="guaranteed-rent.html">Guaranteed Rent</a>
+
+    <a href="company-let.html">Company Let</a>
+
+    <a href="why-choose-us.html">Why Choose Us</a>
+
+    <a href="areas.html">Areas We Cover</a>
+
+    <a href="faq.html">FAQs</a>
+
+    <a href="contact.html">Contact</a>
+
+  </nav>
+
+</header>
+
+
+
+  <main>
+
+
+    <!-- =========================
+         HERO
+    ========================= -->
+
+    <section class="rent-hero">
+
+      <div class="container reveal">
+
+        <p class="eyebrow">
+          GUARANTEED RENT
+        </p>
+
+        <h1>
+          Predictable income.
+          <br>
+          Professional management.
+          <br>
+          <span>Less uncertainty.</span>
+        </h1>
+
+        <p class="rent-hero-copy">
+          A company let structure designed to give landlords greater
+          certainty over rental income while STAYEST manages the
+          day-to-day operation of the property.
+        </p>
+
+        <div class="hero-actions">
+
+          <a
+            class="btn btn-gold"
+            href="contact.html">
+
+            Get a Property Assessment
+
+          </a>
+
+          <a
+            class="btn btn-outline-light"
+            href="services.html">
+
+            Explore Our Services
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         WHAT IS GUARANTEED RENT
+    ========================= -->
+
+    <section class="section">
+
+      <div class="container">
+
+        <div class="rent-intro reveal">
+
+          <div>
+
+            <p class="eyebrow">
+              THE STAYEST MODEL
+            </p>
+
+            <h2>
+              What does Guaranteed Rent mean?
+            </h2>
+
+          </div>
+
+
+          <div class="rent-intro-copy">
+
+            <p>
+              Guaranteed rent is a rental arrangement where the
+              commercial terms are agreed in advance between the
+              landlord and STAYEST.
+            </p>
+
+            <p>
+              Rather than relying on individual tenancy cycles,
+              landlords work with a company as their contractual
+              partner, with the agreed rental payment structured
+              for the term of the agreement.
+            </p>
+
+            <p>
+              The property is then professionally operated and
+              managed by our team in accordance with the agreed
+              terms.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         BENEFITS
+    ========================= -->
+
+    <section class="section rent-benefits">
+
+      <div class="container">
+
+        <div class="rent-section-title reveal">
+
+          <p class="eyebrow">
+            WHY LANDLORDS CHOOSE US
+          </p>
+
+          <h2>
+            Greater certainty.
+            Less day-to-day involvement.
+          </h2>
+
+          <p>
+            Our approach is designed around making property ownership
+            simpler, clearer and more predictable.
+          </p>
+
+        </div>
+
+
+        <div class="rent-benefit-grid">
+
+
+          <article class="rent-benefit reveal">
+
+            <span>01</span>
+
+            <h3>
+              Predictable Income
+            </h3>
+
+            <p>
+              Agree the commercial rental terms in advance so you
+              know what your property is expected to generate under
+              the agreement.
+            </p>
+
+          </article>
+
+
+          <article class="rent-benefit reveal">
+
+            <span>02</span>
+
+            <h3>
+              Long-Term Agreements
+            </h3>
+
+            <p>
+              Longer agreements can provide greater stability for
+              landlords who prefer a longer-term property strategy.
+            </p>
+
+          </article>
+
+
+          <article class="rent-benefit reveal">
+
+            <span>03</span>
+
+            <h3>
+              Professional Management
+            </h3>
+
+            <p>
+              STAYEST manages the operational side of the property
+              according to the responsibilities agreed in the contract.
+            </p>
+
+          </article>
+
+
+          <article class="rent-benefit reveal">
+
+            <span>04</span>
+
+            <h3>
+              One Accountable Partner
+            </h3>
+
+            <p>
+              Deal with one company rather than coordinating multiple
+              occupants, contractors and operational providers.
+            </p>
+
+          </article>
+
+
+          <article class="rent-benefit reveal">
+
+            <span>05</span>
+
+            <h3>
+              Property Oversight
+            </h3>
+
+            <p>
+              Inspections, maintenance coordination and property
+              reporting help keep your asset under professional oversight.
+            </p>
+
+          </article>
+
+
+          <article class="rent-benefit reveal">
+
+            <span>06</span>
+
+            <h3>
+              Portfolio Planning
+            </h3>
+
+            <p>
+              Clear rental arrangements can make it easier to plan
+              your property portfolio and future investment decisions.
+            </p>
+
+          </article>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         HOW IT WORKS
+    ========================= -->
+
+    <section class="section">
+
+      <div class="container">
+
+        <div class="rent-section-title reveal">
+
+          <p class="eyebrow">
+            HOW IT WORKS
+          </p>
+
+          <h2>
+            From property assessment
+            to monthly rent.
+          </h2>
+
+          <p>
+            A straightforward process designed to make the transition
+            into professional company letting simple.
+          </p>
+
+        </div>
+
+
+        <div class="rent-process">
+
+
+          <article class="rent-step reveal">
+
+            <span>01</span>
+
+            <h3>
+              Property Assessment
+            </h3>
+
+            <p>
+              We review your property, location, condition and
+              suitability for our company let model.
+            </p>
+
+          </article>
+
+
+          <article class="rent-step reveal">
+
+            <span>02</span>
+
+            <h3>
+              Rental Proposal
+            </h3>
+
+            <p>
+              We provide a clear proposal outlining the proposed
+              monthly rent and commercial terms.
+            </p>
+
+          </article>
+
+
+          <article class="rent-step reveal">
+
+            <span>03</span>
+
+            <h3>
+              Agreement
+            </h3>
+
+            <p>
+              Once terms are agreed, the company letting arrangement
+              is documented clearly between both parties.
+            </p>
+
+          </article>
+
+
+          <article class="rent-step reveal">
+
+            <span>04</span>
+
+            <h3>
+              Property Preparation
+            </h3>
+
+            <p>
+              Any agreed preparation, compliance, inventory or
+              furnishing requirements are completed.
+            </p>
+
+          </article>
+
+
+          <article class="rent-step reveal">
+
+            <span>05</span>
+
+            <h3>
+              Professional Management
+            </h3>
+
+            <p>
+              Our operations team manages the agreed day-to-day
+              responsibilities of the property.
+            </p>
+
+          </article>
+
+
+          <article class="rent-step reveal">
+
+            <span>06</span>
+
+            <h3>
+              Monthly Rent
+            </h3>
+
+            <p>
+              Rental payments are made according to the agreed
+              commercial terms throughout the contract.
+            </p>
+
+          </article>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         WHAT WE MANAGE
+    ========================= -->
+
+    <section class="section rent-management">
+
+      <div class="container">
+
+        <div class="rent-section-title reveal">
+
+          <p class="eyebrow">
+            PROFESSIONAL MANAGEMENT
+          </p>
+
+          <h2>
+            More than just collecting rent.
+          </h2>
+
+          <p>
+            Depending on the agreement, our team can take responsibility
+            for a wide range of property operations.
+          </p>
+
+        </div>
+
+
+        <div class="management-grid">
+
+
+          <article class="management-card reveal">
+
+            <h3>
+              Occupancy Management
+            </h3>
+
+            <p>
+              Coordinating occupants and managing the operational
+              requirements throughout the agreement.
+            </p>
+
+          </article>
+
+
+          <article class="management-card reveal">
+
+            <h3>
+              Property Inspections
+            </h3>
+
+            <p>
+              Scheduled inspections and documented reporting to
+              maintain oversight of your property.
+            </p>
+
+          </article>
+
+
+          <article class="management-card reveal">
+
+            <h3>
+              Maintenance
+            </h3>
+
+            <p>
+              Coordinating repairs and maintenance through appropriate
+              contractors and agreed procedures.
+            </p>
+
+          </article>
+
+
+          <article class="management-card reveal">
+
+            <h3>
+              Professional Cleaning
+            </h3>
+
+            <p>
+              Coordinating professional cleaning and property
+              presentation where required.
+            </p>
+
+          </article>
+
+
+          <article class="management-card reveal">
+
+            <h3>
+              Compliance
+            </h3>
+
+            <p>
+              Supporting the tracking and management of relevant
+              property documentation and compliance requirements.
+            </p>
+
+          </article>
+
+
+          <article class="management-card reveal">
+
+            <h3>
+              Property Care
+            </h3>
+
+            <p>
+              Helping protect the condition and presentation of
+              the property throughout the agreement.
+            </p>
+
+          </article>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         WHO IT'S FOR
+    ========================= -->
+
+    <section class="section">
+
+      <div class="container">
+
+        <div class="rent-section-title reveal">
+
+          <p class="eyebrow">
+            WHO WE WORK WITH
+          </p>
+
+          <h2>
+            Built for different types
+            of property owners.
+          </h2>
+
+          <p>
+            Our company let model can be considered by property owners
+            and professional property partners looking for a longer-term
+            management solution.
+          </p>
+
+        </div>
+
+
+        <div class="landlord-types">
+
+
+          <div class="landlord-type reveal">
+            Private Landlords
+          </div>
+
+          <div class="landlord-type reveal">
+            Property Investors
+          </div>
+
+          <div class="landlord-type reveal">
+            Letting Agents
+          </div>
+
+          <div class="landlord-type reveal">
+            Developers
+          </div>
+
+          <div class="landlord-type reveal">
+            Portfolio Landlords
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         CTA
+    ========================= -->
+
+    <section class="section rent-cta">
+
+      <div class="container">
+
+        <div class="rent-cta-box reveal">
+
+          <div>
+
+            <p class="eyebrow">
+              PROPERTY ASSESSMENT
+            </p>
+
+            <h2>
+              Let's discuss your property.
+            </h2>
+
+            <p>
+              Tell us about your property and we'll assess whether
+              our guaranteed rent and company let model could be
+              suitable for you.
+            </p>
+
+          </div>
+
+
+          <a
+            class="btn btn-gold"
+            href="contact.html">
+
+            Get Free Property Assessment
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+
+  <!-- =========================
+       FOOTER
+  ========================= -->
+
+  <footer class="footer">
+
+    <div class="container footer-grid">
+
+
+      <div>
+
+        <img
+          src="images/stayest_logo.png"
+          alt="STAYEST"
+          class="footer-logo">
+
+        <p>
+          Guaranteed rent and fully managed company let solutions
+          for landlords, agents and investors across the United Kingdom.
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <h4>Explore</h4>
+
+        <a href="index.html">Home</a>
+
+        <a href="about.html">About</a>
+
+        <a href="services.html">Services</a>
+
+        <a href="properties.html">Properties</a>
+
+      </div>
+
+
+      <div>
+
+        <h4>Company</h4>
+
+        <a href="guaranteed-rent.html">
+          Guaranteed Rent
+        </a>
+
+        <a href="company-let.html">
+          Company Let
+        </a>
+
+        <a href="why-choose-us.html">
+          Why Choose Us
+        </a>
+
+        <a href="areas.html">
+          Areas We Cover
+        </a>
+
+      </div>
+
+
+      <div>
+
+        <h4>Contact</h4>
+
+        <a href="tel:+447384040875">
+          +44 7384 040875
+        </a>
+
+        <a href="mailto:stayestltd@gmail.com">
+          stayestltd@gmail.com
+        </a>
+
+        <span>
+          United Kingdom
+        </span>
+
+      </div>
+
+
+    </div>
+
+
+    <div class="container footer-bottom">
+
+      <span>
+        © 2026 STAYEST. All rights reserved.
+      </span>
+
+      <div>
+
+        <a href="privacy-policy.html">
+          Privacy Policy
+        </a>
+
+        <a href="terms.html">
+          Terms & Conditions
+        </a>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+
+  <!-- WHATSAPP -->
+
+  <a
+    class="whatsapp"
+    href="https://wa.me/447384040875?text=Hello%20STAYEST%2C%20I%E2%80%99m%20interested%20in%20your%20company%20let%20and%20guaranteed%20rent%20services.%20I%E2%80%99d%20like%20to%20discuss%20my%20property%20and%20find%20out%20whether%20it%20would%20be%20suitable.%20Thank%20you."
+    target="_blank"
+    rel="noopener"
+  >
+    ◉ <span>WhatsApp us</span>
+  </a>
+
+
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
